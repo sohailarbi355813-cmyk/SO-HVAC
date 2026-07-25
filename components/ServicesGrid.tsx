@@ -223,7 +223,7 @@ function ServiceCard({ service, index }: { service: ServiceCard; index: number }
 
         {/* CTA link */}
         <div
-          className="flex items-center gap-2 text-[16px] font-display font-semibold transition-all duration-200 group-hover:gap-3"
+          className="flex items-center gap-2 text-[16px] font-body font-semibold transition-all duration-200 group-hover:gap-3"
           style={{ color: accentColor }}
         >
           Learn More

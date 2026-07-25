@@ -268,7 +268,7 @@ export default function BundleCards() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ type: "spring", stiffness: 400, damping: 18 }}
-                  className="flex w-full items-center justify-center gap-2.5 py-4 rounded-2xl font-display font-semibold text-[18px] tracking-wide text-white transition-shadow duration-300"
+                  className="flex w-full items-center justify-center gap-2.5 py-4 rounded-2xl font-body font-semibold text-[18px] tracking-wide text-white transition-shadow duration-300"
                   style={{
                     background: bundle.gradient,
                     boxShadow: `0 8px 32px ${bundle.glowColor}`,

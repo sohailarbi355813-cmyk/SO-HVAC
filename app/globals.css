@@ -84,7 +84,7 @@ body {
 /* ─── Typography ─── */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-cormorant), var(--font-manrope), system-ui, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -262,7 +262,7 @@ p {
   padding: 0.875rem 2rem;
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: #fff;
-  font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: 0.02em;
@@ -286,7 +286,7 @@ p {
   padding: 0.875rem 2rem;
   background: transparent;
   color: var(--text-primary);
-  font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: 0.02em;
@@ -316,7 +316,7 @@ p {
   padding: 0.875rem 2rem;
   background: linear-gradient(135deg, #1a2e5a 0%, #0f1e3d 100%);
   color: #fff;
-  font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: 0.02em;
