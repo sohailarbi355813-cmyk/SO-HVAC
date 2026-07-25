@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Tempting", "var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-playfair)", "system-ui", "sans-serif"],
         body:    ["var(--font-inter)",  "system-ui", "sans-serif"],
       },
       colors: {

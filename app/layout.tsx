@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-body antialiased`}
+        className={`${playfair.variable} ${inter.variable} font-body antialiased`}
         style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
       >
         <ThemeProvider>{children}</ThemeProvider>
