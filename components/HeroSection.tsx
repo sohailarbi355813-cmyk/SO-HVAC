@@ -56,8 +56,8 @@ export default function HeroSection() {
           transition={{ delay: 0.2 }}
           className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-[25%] flex flex-col lg:items-start lg:justify-start gap-6 pointer-events-none lg:pointer-events-auto"
         >
-          {/* Blue Circular Badge (Top Center on Mobile) */}
-          <div className="absolute lg:relative top-8 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4 pointer-events-auto">
+          {/* Blue Circular Badge (Top Center on Mobile, pushed up into the sky) */}
+          <div className="absolute lg:relative -top-12 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4 pointer-events-auto">
             <div className="absolute inset-0 bg-[#0284c7] rounded-full opacity-15" />
             <span className="text-[var(--brand-navy)] font-display font-black text-2xl sm:text-3xl md:text-5xl block">NO. 1</span>
             <span className="text-[#0284c7] text-[8px] sm:text-[9px] md:text-[11px] font-bold uppercase leading-tight mt-1 tracking-widest">
