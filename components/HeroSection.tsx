@@ -32,7 +32,7 @@ export default function HeroSection() {
         {/* Mobile Portrait Background */}
         <div className="block lg:hidden absolute inset-0 w-full h-full">
           <Image
-            src="/mobile_bg_filter.png"
+            src="/Gemini_Generated_Image_m7j6mmm7j6mmm7j6.png"
             alt="Mobile HVAC Water Filtration Background"
             fill
             className="object-cover object-center"
