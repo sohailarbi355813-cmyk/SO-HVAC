@@ -105,8 +105,8 @@ export default function BundleCards() {
           Limited Time Offer
         </span>
         <h2
-          className="font-display font-900 mb-5"
-          style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)", color: "var(--text-primary)" }}
+          className="font-display font-bold mb-5"
+          style={{ fontSize: "clamp(40px, 4vw, 48px)", color: "var(--text-primary)" }}
         >
           Premium Bundles
         </h2>
@@ -185,14 +185,14 @@ export default function BundleCards() {
                     {/* Title */}
                     <div>
                       <h3
-                        className="font-display font-900 text-2xl sm:text-3xl leading-tight"
+                        className="font-display font-bold text-[28px] sm:text-[32px] leading-tight"
                         style={{ color: "var(--text-primary)" }}
                       >
                         {bundle.title}
                       </h3>
                       {bundle.subtitle && (
                         <p
-                          className="font-body text-sm mt-1 font-medium"
+                          className="font-body text-[16px] mt-1 font-medium"
                           style={{ color: bundle.accentColor, opacity: 0.85 }}
                         >
                           {bundle.subtitle}
@@ -252,7 +252,7 @@ export default function BundleCards() {
                           />
                         </svg>
                       </span>
-                      <span className="font-body text-sm leading-snug text-[var(--text-secondary)]">
+                      <span className="font-body text-[16px] leading-snug text-[var(--text-secondary)]">
                         {feature}
                       </span>
                     </li>
@@ -268,7 +268,7 @@ export default function BundleCards() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ type: "spring", stiffness: 400, damping: 18 }}
-                  className="flex w-full items-center justify-center gap-2.5 py-4 rounded-2xl font-display font-800 text-base tracking-wide text-white transition-shadow duration-300"
+                  className="flex w-full items-center justify-center gap-2.5 py-4 rounded-2xl font-display font-semibold text-[18px] tracking-wide text-white transition-shadow duration-300"
                   style={{
                     background: bundle.gradient,
                     boxShadow: `0 8px 32px ${bundle.glowColor}`,

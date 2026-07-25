@@ -211,19 +211,19 @@ function ServiceCard({ service, index }: { service: ServiceCard; index: number }
         {/* Text */}
         <div>
           <h3
-            className="font-display font-800 text-xl mb-2.5 transition-colors duration-200"
+            className="font-display font-bold text-[28px] lg:text-[32px] leading-tight mb-3 transition-colors duration-200"
             style={{ color: "var(--text-primary)" }}
           >
             {service.title}
           </h3>
-          <p className="font-body text-sm leading-relaxed text-[var(--text-secondary)]">
+          <p className="font-body text-[16px] leading-relaxed text-[var(--text-secondary)]">
             {service.description}
           </p>
         </div>
 
         {/* CTA link */}
         <div
-          className="flex items-center gap-2 text-sm font-display font-700 transition-all duration-200 group-hover:gap-3"
+          className="flex items-center gap-2 text-[16px] font-display font-semibold transition-all duration-200 group-hover:gap-3"
           style={{ color: accentColor }}
         >
           Learn More
@@ -275,8 +275,8 @@ export default function ServicesGrid() {
           What We Do
         </span>
         <h2
-          className="font-display font-900 mb-5"
-          style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)", color: "var(--text-primary)" }}
+          className="font-display font-bold mb-5"
+          style={{ fontSize: "clamp(40px, 4vw, 48px)", color: "var(--text-primary)" }}
         >
           Our Services
         </h2>

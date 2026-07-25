@@ -66,7 +66,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main Headline Left (Middle Left on Mobile) */}
-          <h1 className="absolute lg:relative top-[45%] lg:top-0 -translate-y-1/2 lg:translate-y-0 left-2 lg:left-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-left pointer-events-auto">
+          <h1 className="absolute lg:relative top-[45%] lg:top-0 -translate-y-1/2 lg:translate-y-0 left-2 lg:left-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-[56px] xl:text-[64px] font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-left pointer-events-auto">
             Canada <br />
             has <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">water<br/>problem</span>
@@ -144,7 +144,7 @@ export default function HeroSection() {
           className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-[25%] flex flex-col lg:justify-start lg:items-end pointer-events-none lg:pointer-events-auto z-20"
         >
           {/* Headline Right (Middle Right on Mobile) */}
-          <h2 className="absolute lg:relative top-[55%] lg:top-0 -translate-y-1/2 lg:translate-y-0 right-2 lg:right-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-right pointer-events-auto">
+          <h2 className="absolute lg:relative top-[55%] lg:top-0 -translate-y-1/2 lg:translate-y-0 right-2 lg:right-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-[56px] xl:text-[64px] font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-right pointer-events-auto">
             We <br />
             have <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">the<br/>solution</span>

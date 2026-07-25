@@ -74,6 +74,7 @@ html {
 
 body {
   font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 18px;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
@@ -91,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: var(--text-secondary);
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -261,8 +263,8 @@ p {
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: #fff;
   font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   letter-spacing: 0.02em;
   border-radius: 10px;
   border: none;
@@ -285,8 +287,8 @@ p {
   background: transparent;
   color: var(--text-primary);
   font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   letter-spacing: 0.02em;
   border-radius: 10px;
   border: 2px solid var(--brand-navy);
@@ -315,8 +317,8 @@ p {
   background: linear-gradient(135deg, #1a2e5a 0%, #0f1e3d 100%);
   color: #fff;
   font-family: var(--font-cormorant), var(--font-manrope), sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   letter-spacing: 0.02em;
   border-radius: 10px;
   border: none;
