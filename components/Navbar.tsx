@@ -28,7 +28,7 @@ export default function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.1 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
         scrolled
           ? "bg-[var(--bg-primary)]/80 backdrop-blur-xl border-b border-[var(--border-color)] shadow-[var(--shadow-sm)]"
           : "bg-transparent"
@@ -87,10 +87,10 @@ export default function Navbar() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             onClick={() => setMenuOpen(!menuOpen)}
-            className="w-9 h-9 rounded-lg flex items-center justify-center border border-[var(--border-color)] bg-[var(--bg-tertiary)]"
+            className="w-10 h-10 rounded-lg flex items-center justify-center border border-[var(--border-color)] bg-[var(--bg-tertiary)] relative z-[100] pointer-events-auto cursor-pointer"
             aria-label="Toggle mobile menu"
           >
-            <div className="flex flex-col gap-[5px] w-5">
+            <div className="flex flex-col gap-[5px] w-5 pointer-events-none">
               <motion.span
                 animate={menuOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
                 className="block h-0.5 w-full bg-[var(--text-primary)] rounded-full"
