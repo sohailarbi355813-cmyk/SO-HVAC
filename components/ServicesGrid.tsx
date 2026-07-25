@@ -7,7 +7,7 @@ interface ServiceCard {
   id: string;
   title: string;
   description: string;
-  accentColor: "red" | "navy" | "blue";
+  accentColor: "red" | "navy" | "blue" | "cyan" | "orange";
   icon: ReactNode;
 }
 
@@ -17,14 +17,19 @@ const services: ServiceCard[] = [
     title: "Air Conditioning",
     description:
       "High-efficiency central AC systems installed with precision. Stay cool all summer with energy-saving units from top-tier brands.",
-    accentColor: "navy",
+    accentColor: "blue",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(26,46,90,0.10)" />
-        <path d="M10 24h28M24 10v28M16 16l16 16M32 16L16 32" stroke="#1a2e5a" strokeWidth="2.5" strokeLinecap="round"/>
-        <circle cx="24" cy="24" r="6" stroke="#1a2e5a" strokeWidth="2.5"/>
-        <circle cx="24" cy="24" r="2" fill="#1a2e5a" />
-      </svg>
+      /* Cooling / Ice Snowflake Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500/20 to-cyan-500/10 border border-blue-500/30 flex items-center justify-center text-blue-600 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="12" y1="2" x2="12" y2="22" />
+          <path d="m20 16-4-4 4-4" />
+          <path d="m4 8 4 4-4 4" />
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <path d="m16 4-4 4-4-4" />
+          <path d="m8 20 4-4 4 4" />
+        </svg>
+      </div>
     ),
   },
   {
@@ -34,13 +39,12 @@ const services: ServiceCard[] = [
       "Modern, efficient furnace installations that provide reliable, even heat throughout your home during the harshest winters.",
     accentColor: "red",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(220,38,38,0.1)" />
-        <rect x="12" y="14" width="24" height="22" rx="3" stroke="var(--brand-red)" strokeWidth="2.5"/>
-        <path d="M12 20h24" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M18 20v16M30 20v16" stroke="var(--brand-red)" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-        <path d="M20 11c0 0 2-2 4 0s4 0 4 0" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
+      /* Heating / Hot Fire Flame Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500/20 to-orange-500/10 border border-red-500/30 flex items-center justify-center text-red-600 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+        </svg>
+      </div>
     ),
   },
   {
@@ -49,13 +53,15 @@ const services: ServiceCard[] = [
     description: "Year-round comfort with a single system. Heat pumps offer exceptional efficiency for both heating and cooling in one unit.",
     accentColor: "navy",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(26,46,90,0.10)" />
-        <path d="M24 34V14" stroke="#1a2e5a" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M17 21l7-7 7 7" stroke="#1a2e5a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M17 27l7 7 7-7" stroke="#1a2e5a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.5"/>
-        <circle cx="24" cy="24" r="12" stroke="#1a2e5a" strokeWidth="2" strokeDasharray="4 4"/>
-      </svg>
+      /* Dual Thermal Loop / Heat & Cool Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#1a2e5a]/20 to-purple-500/10 border border-[#1a2e5a]/30 flex items-center justify-center text-[#1a2e5a] shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+          <path d="M17 13v4a5 5 0 0 1-10 0v-4" />
+          <path d="M3 11 h4 l-2 -3 z" fill="currentColor" />
+          <path d="M17 13 h4 l-2 3 z" fill="currentColor" />
+        </svg>
+      </div>
     ),
   },
   {
@@ -63,15 +69,17 @@ const services: ServiceCard[] = [
     title: "Water Heater",
     description:
       "Reliable hot water on demand with traditional or hybrid water heaters installed by certified technicians.",
-    accentColor: "red",
+    accentColor: "orange",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(220,38,38,0.1)" />
-        <rect x="14" y="10" width="20" height="28" rx="10" stroke="var(--brand-red)" strokeWidth="2.5"/>
-        <path d="M20 38h8" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M22 20c0 0 0 2 2 4s2 4 2 4" stroke="var(--brand-red-light)" strokeWidth="2" strokeLinecap="round" opacity="0.7"/>
-        <circle cx="24" cy="18" r="2" fill="var(--brand-red)" opacity="0.6"/>
-      </svg>
+      /* Hot Steaming Water Droplet Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-orange-600 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2v6" />
+          <path d="M12 22a7 7 0 0 0 7-7c0-2-2-5-7-11-5 6-7 9-7 11a7 7 0 0 0 7 7z" />
+          <path d="M8.5 9.5 7 8" />
+          <path d="M15.5 9.5 17 8" />
+        </svg>
+      </div>
     ),
   },
   {
@@ -81,14 +89,16 @@ const services: ServiceCard[] = [
       "Endless hot water with zero standby heat loss. Save space and energy with a modern on-demand tankless system.",
     accentColor: "red",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(220,38,38,0.1)" />
-        <rect x="14" y="10" width="20" height="28" rx="4" stroke="var(--brand-red)" strokeWidth="2.5"/>
-        <path d="M14 20h20M14 28h20" stroke="var(--brand-red)" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-        <path d="M21 24h6" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M18 38v2M30 38v2" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M20 10V8M28 10V8" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
+      /* High-tech Instant Flow / Tankless Unit Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500/20 to-red-500/10 border border-rose-500/30 flex items-center justify-center text-rose-600 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="3" y="4" width="18" height="12" rx="2" />
+          <path d="M7 20v-4" />
+          <path d="M17 20v-4" />
+          <path d="M12 20v-4" />
+          <circle cx="12" cy="10" r="2" fill="currentColor" opacity="0.5" />
+        </svg>
+      </div>
     ),
   },
   {
@@ -96,14 +106,18 @@ const services: ServiceCard[] = [
     title: "Water Purification",
     description:
       "Crystal-clear, pure water throughout your home. From softeners to reverse osmosis systems — water you can trust.",
-    accentColor: "navy",
+    accentColor: "cyan",
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-full h-full">
-        <rect width="48" height="48" rx="12" fill="rgba(26,46,90,0.10)" />
-        <path d="M24 10s-10 10-10 18a10 10 0 0020 0C34 20 24 10 24 10z" stroke="#1a2e5a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M18 28a6 6 0 008 0" stroke="#1d5fa8" strokeWidth="2" strokeLinecap="round" opacity="0.7"/>
-        <circle cx="24" cy="26" r="2" fill="#1d5fa8" opacity="0.5"/>
-      </svg>
+      /* Pure Sparkling Water / Filtration Icon */
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-blue-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-600 shadow-sm">
+        <svg viewBox="0 0 24 24" fill="none" className="w-7 h-7 stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22a7 7 0 0 0 7-7c0-2-2-5-7-11-5 6-7 9-7 11a7 7 0 0 0 7 7z" />
+          <path d="m19 8 1 1-1 1" />
+          <path d="m5 8-1 1 1 1" />
+          <path d="M12 15v2" />
+          <path d="M10 17h4" />
+        </svg>
+      </div>
     ),
   },
 ];
@@ -127,27 +141,31 @@ const cardVariants = {
 function ServiceCard({ service, index }: { service: ServiceCard; index: number }) {
   const isRed = service.accentColor === "red";
   const isNavy = service.accentColor === "navy";
+  const isCyan = service.accentColor === "cyan";
+  const isOrange = service.accentColor === "orange";
   const accentColor = isRed
     ? "var(--brand-red)"
     : isNavy
     ? "var(--brand-navy)"
-    : "var(--brand-blue)";
-  const accentBg = isRed
-    ? "rgba(220,38,38,0.08)"
-    : isNavy
-    ? "rgba(26,46,90,0.08)"
-    : "rgba(29,95,168,0.08)";
+    : isCyan
+    ? "#0284c7"
+    : isOrange
+    ? "#ea580c"
+    : "#2563eb";
   const hoverShadow = isRed
     ? "0 20px 56px rgba(220,38,38,0.16), 0 8px 20px rgba(220,38,38,0.09)"
     : isNavy
     ? "0 20px 56px rgba(26,46,90,0.20), 0 8px 20px rgba(26,46,90,0.12)"
+    : isCyan
+    ? "0 20px 56px rgba(2,132,199,0.18), 0 8px 20px rgba(2,132,199,0.10)"
     : "0 20px 56px rgba(29,95,168,0.16), 0 8px 20px rgba(29,95,168,0.09)";
   const hoverBorder = isRed
     ? "rgba(220,38,38,0.30)"
     : isNavy
     ? "rgba(26,46,90,0.35)"
-    : "rgba(29,95,168,0.30)";
-  const topAccentColor = accentColor;
+    : isCyan
+    ? "rgba(2,132,199,0.35)"
+    : "rgba(37,99,235,0.30)";
 
   // Staggered vertical offsets for organic layout feel
   const verticalOffset = [0, 20, -10, 10, -20, 0][index] ?? 0;
