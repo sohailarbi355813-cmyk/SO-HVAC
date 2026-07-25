@@ -18,13 +18,27 @@ export default function HeroSection() {
         as generated.
       */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-        <Image
-          src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
-          alt="HVAC Ultra-Pure Water Filtration System Background"
-          fill
-          className="object-contain lg:object-cover object-center mix-blend-multiply lg:mix-blend-normal"
-          priority
-        />
+        {/* Desktop Landscape Background */}
+        <div className="hidden lg:block absolute inset-0 w-full h-full">
+          <Image
+            src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
+            alt="HVAC Ultra-Pure Water Filtration System Background"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        </div>
+        
+        {/* Mobile Portrait Background */}
+        <div className="block lg:hidden absolute inset-0 w-full h-full">
+          <Image
+            src="/mobile_bg_filter.png"
+            alt="Mobile HVAC Water Filtration Background"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        </div>
       </div>
 
       {/* 
