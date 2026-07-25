@@ -22,7 +22,7 @@ export default function HeroSection() {
           src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
           alt="HVAC Ultra-Pure Water Filtration System Background"
           fill
-          className="object-cover object-center"
+          className="object-contain md:object-cover object-center"
           priority
         />
       </div>
