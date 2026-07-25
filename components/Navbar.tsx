@@ -108,38 +108,39 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu (Premium Full-Screen Overlay) */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="md:hidden overflow-hidden bg-[var(--bg-primary)]/95 backdrop-blur-xl border-b border-[var(--border-color)]"
+            className="md:hidden fixed top-[72px] left-0 right-0 bottom-0 bg-[var(--bg-primary)]/90 backdrop-blur-2xl border-t border-[var(--border-color)]/30 z-40 overflow-y-auto"
             id="mobile-menu"
           >
-            <div className="max-w-7xl mx-auto px-5 py-6 flex flex-col gap-5">
+            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] gap-10 px-6 py-12">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.label}
                   href={link.href}
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: i * 0.06, type: "spring", stiffness: 300, damping: 25 }}
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.1, type: "spring", stiffness: 300, damping: 25 }}
                   onClick={() => setMenuOpen(false)}
-                  className="text-[var(--text-primary)] font-display font-700 text-xl"
+                  className="text-[var(--text-primary)] font-display font-medium text-4xl tracking-tight relative group flex flex-col items-center"
                 >
                   {link.label}
+                  <span className="absolute -bottom-3 w-1/2 h-[2px] bg-[var(--brand-red)] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center rounded-full" />
                 </motion.a>
               ))}
               <motion.a
                 href="#contact"
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.2, type: "spring", stiffness: 300, damping: 25 }}
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3, type: "spring", stiffness: 300, damping: 25 }}
                 onClick={() => setMenuOpen(false)}
-                className="btn-primary text-center mt-2"
+                className="btn-primary text-center mt-8 px-10 py-4 text-lg w-full max-w-[280px] justify-center shadow-[0_8px_32px_-4px_rgba(220,38,38,0.4)]"
               >
                 Free Assessment
               </motion.a>
