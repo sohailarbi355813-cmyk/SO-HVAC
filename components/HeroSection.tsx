@@ -37,7 +37,7 @@ export default function HeroSection() {
             muted
             playsInline
             preload="auto"
-            className="object-cover object-center w-full h-full scale-[1.08] select-none pointer-events-none"
+            className="object-cover object-center w-full h-full scale-[1.25] select-none pointer-events-none"
           >
             <source src="/kling_20260725_VIDEO__static_fi_4103_0.mp4" type="video/mp4" />
             Your browser does not support the video background.
@@ -45,7 +45,10 @@ export default function HeroSection() {
         </div>
 
         {/* Elegant Bottom & Corner Edge Mask (Conceals any remaining watermark & blends smoothly into the next section) */}
-        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-[var(--bg-primary)] via-[var(--bg-primary)]/70 to-transparent z-10 pointer-events-none" />
+        <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-[var(--bg-primary)] via-[var(--bg-primary)]/80 to-transparent z-10 pointer-events-none" />
+        
+        {/* Dedicated Bottom-Right Cloud Mask to guaranteed obliterate any Gemini or AI logo on any mobile viewport */}
+        <div className="block lg:hidden absolute -bottom-8 -right-8 w-64 h-64 bg-[radial-gradient(circle,var(--bg-primary)_35%,transparent_70%)] opacity-95 blur-md z-10 pointer-events-none" />
       </div>
 
       {/* 
