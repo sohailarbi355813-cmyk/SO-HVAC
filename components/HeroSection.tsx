@@ -19,30 +19,33 @@ export default function HeroSection() {
       */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         {/* Desktop Landscape Background (Static High-Res Widescreen Photo) */}
-        <div className="hidden lg:block absolute inset-0 w-full h-full">
+        <div className="hidden lg:block absolute inset-0 w-full h-full overflow-hidden">
           <Image
             src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
             alt="HVAC Ultra-Pure Water Filtration System Background"
             fill
-            className="object-cover object-center"
+            className="object-cover object-center scale-[1.04] select-none"
             priority
           />
         </div>
         
         {/* Mobile Portrait Background (Animated Kling Video - 100% Muted & Looped) */}
-        <div className="block lg:hidden absolute inset-0 w-full h-full">
+        <div className="block lg:hidden absolute inset-0 w-full h-full overflow-hidden">
           <video
             autoPlay
             loop
             muted
             playsInline
             preload="auto"
-            className="object-cover object-center w-full h-full"
+            className="object-cover object-center w-full h-full scale-[1.08] select-none pointer-events-none"
           >
             <source src="/kling_20260725_VIDEO__static_fi_4103_0.mp4" type="video/mp4" />
             Your browser does not support the video background.
           </video>
         </div>
+
+        {/* Elegant Bottom & Corner Edge Mask (Conceals any remaining watermark & blends smoothly into the next section) */}
+        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-[var(--bg-primary)] via-[var(--bg-primary)]/70 to-transparent z-10 pointer-events-none" />
       </div>
 
       {/* 
