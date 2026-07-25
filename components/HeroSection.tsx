@@ -54,10 +54,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
-          className="w-full lg:w-[25%] flex flex-col items-center lg:items-start justify-start gap-6 pointer-events-auto text-center lg:text-left"
+          className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-[25%] flex flex-col lg:items-start lg:justify-start gap-6 pointer-events-none lg:pointer-events-auto"
         >
-          {/* Blue Circular Badge */}
-          <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4 mt-8 lg:mt-0">
+          {/* Blue Circular Badge (Top Center on Mobile) */}
+          <div className="absolute lg:relative top-8 lg:top-0 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4 pointer-events-auto">
             <div className="absolute inset-0 bg-[#0284c7] rounded-full opacity-15" />
             <span className="text-[var(--brand-navy)] font-display font-black text-2xl sm:text-3xl md:text-5xl block">NO. 1</span>
             <span className="text-[#0284c7] text-[8px] sm:text-[9px] md:text-[11px] font-bold uppercase leading-tight mt-1 tracking-widest">
@@ -65,8 +65,8 @@ export default function HeroSection() {
             </span>
           </div>
 
-          {/* Main Headline Left */}
-          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
+          {/* Main Headline Left (Middle Left on Mobile) */}
+          <h1 className="absolute lg:relative top-[45%] lg:top-0 -translate-y-1/2 lg:translate-y-0 left-2 lg:left-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-left pointer-events-auto">
             Canada <br />
             has <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">water<br/>problem</span>
@@ -141,9 +141,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6 }}
-          className="w-full lg:w-[25%] flex flex-col justify-end lg:justify-start items-center lg:items-end text-center lg:text-right z-20 mt-auto lg:mt-0 pt-0 lg:pt-28 pointer-events-auto pb-20 lg:pb-0"
+          className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-[25%] flex flex-col lg:justify-start lg:items-end pointer-events-none lg:pointer-events-auto z-20"
         >
-          <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
+          {/* Headline Right (Middle Right on Mobile) */}
+          <h2 className="absolute lg:relative top-[55%] lg:top-0 -translate-y-1/2 lg:translate-y-0 right-2 lg:right-0 w-[45%] lg:w-auto font-display text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight text-right pointer-events-auto">
             We <br />
             have <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">the<br/>solution</span>
