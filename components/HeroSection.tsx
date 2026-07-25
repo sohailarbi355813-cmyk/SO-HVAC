@@ -33,14 +33,14 @@ export default function HeroSection() {
         ========================================================================
         All text elements are perfectly positioned in front of the image (z-20).
       */}
-      <div className="relative w-full max-w-[1800px] h-full mx-auto px-4 lg:px-8 z-20 pointer-events-none flex flex-col lg:flex-row items-start justify-between gap-4">
+      <div className="relative w-full max-w-[1800px] h-full min-h-[calc(100vh-80px)] mx-auto px-4 lg:px-8 z-20 pointer-events-none flex flex-col lg:flex-row items-center lg:items-start justify-between gap-4 py-8 lg:py-0">
         
         {/* LEFT SECTION: Badge & Headline */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
-          className="w-full lg:w-[25%] flex flex-col items-start justify-start gap-6 pointer-events-auto"
+          className="w-full lg:w-[25%] flex flex-col items-center lg:items-start justify-start gap-6 pointer-events-auto text-center lg:text-left"
         >
           {/* Blue Circular Badge */}
           <div className="relative w-28 h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4">
@@ -59,12 +59,12 @@ export default function HeroSection() {
           </h1>
         </motion.div>
 
-        {/* CENTRAL SECTION: Top Title & Stage Labels */}
+        {/* CENTRAL SECTION: Top Title & Stage Labels (Hidden on Mobile for cleanliness) */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="w-full lg:w-[50%] flex flex-col justify-start items-center relative mt-16 lg:mt-4 pointer-events-none"
+          className="hidden lg:flex w-full lg:w-[50%] flex-col justify-start items-center relative mt-16 lg:mt-4 pointer-events-none"
         >
           {/* Top Center Title */}
           <div className="absolute -top-12 md:-top-20 left-1/2 -translate-x-1/2 w-[120%] text-center pointer-events-auto">
@@ -127,7 +127,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6 }}
-          className="w-full lg:w-[25%] flex flex-col justify-start items-end lg:items-end text-right z-20 pt-28 md:pt-40 pointer-events-auto"
+          className="w-full lg:w-[25%] flex flex-col justify-end lg:justify-start items-center lg:items-end text-center lg:text-right z-20 mt-auto lg:mt-0 pt-0 lg:pt-28 pointer-events-auto pb-12 lg:pb-0"
         >
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
             We <br />
