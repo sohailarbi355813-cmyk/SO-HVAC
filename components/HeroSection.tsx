@@ -22,17 +22,9 @@ export default function HeroSection() {
           src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
           alt="HVAC Ultra-Pure Water Filtration System Background"
           fill
-          className="object-contain lg:object-cover object-center"
+          className="object-contain lg:object-cover object-center mix-blend-multiply lg:mix-blend-normal"
           priority
         />
-        
-        {/* Mobile Edge Blending Overlays to make the image feel "complete" and seamless */}
-        <div className="absolute inset-0 lg:hidden pointer-events-none z-10 flex flex-col justify-between">
-           {/* Top blend: Covers the empty top space and feathers into the top edge of the image */}
-           <div className="w-full h-[45%] bg-gradient-to-b from-[var(--bg-primary)] from-70% to-transparent" />
-           {/* Bottom blend: Covers the empty bottom space and feathers into the bottom edge of the image */}
-           <div className="w-full h-[45%] bg-gradient-to-t from-[var(--bg-primary)] from-70% to-transparent" />
-        </div>
       </div>
 
       {/* 
