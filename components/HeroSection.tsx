@@ -18,7 +18,7 @@ export default function HeroSection() {
         as generated.
       */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-        {/* Desktop Landscape Background */}
+        {/* Desktop Landscape Background (Static High-Res Widescreen Photo) */}
         <div className="hidden lg:block absolute inset-0 w-full h-full">
           <Image
             src="/Gemini_Generated_Image_tda5x5tda5x5tda5.png"
@@ -29,15 +29,19 @@ export default function HeroSection() {
           />
         </div>
         
-        {/* Mobile Portrait Background */}
+        {/* Mobile Portrait Background (Animated Kling Video - 100% Muted & Looped) */}
         <div className="block lg:hidden absolute inset-0 w-full h-full">
-          <Image
-            src="/Gemini_Generated_Image_m7j6mmm7j6mmm7j6.png"
-            alt="Mobile HVAC Water Filtration Background"
-            fill
-            className="object-cover object-center"
-            priority
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="object-cover object-center w-full h-full"
+          >
+            <source src="/kling_20260725_VIDEO__static_fi_4103_0.mp4" type="video/mp4" />
+            Your browser does not support the video background.
+          </video>
         </div>
       </div>
 
