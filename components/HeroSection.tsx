@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import WaterFlowOverlay from "@/components/WaterFlowOverlay";
 
 export default function HeroSection() {
   return (
@@ -40,6 +41,9 @@ export default function HeroSection() {
           />
         </div>
       </div>
+
+      {/* Interactive Liquid Stream Animation (Murky intake left, pure crystal cascade right) */}
+      <WaterFlowOverlay />
 
       {/* 
         ========================================================================
