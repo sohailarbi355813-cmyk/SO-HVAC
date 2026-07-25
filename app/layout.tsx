@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Manrope, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-playfair",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -40,8 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfair.variable} ${inter.variable} font-body antialiased`}
-        style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
+        className={`${cormorant.variable} ${manrope.variable} font-body antialiased`}
+        style={{ fontFamily: "var(--font-manrope), system-ui, sans-serif" }}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

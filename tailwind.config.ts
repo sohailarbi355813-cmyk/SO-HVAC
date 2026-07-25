@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["var(--font-playfair)", "system-ui", "sans-serif"],
-        body:    ["var(--font-inter)",  "system-ui", "sans-serif"],
+        display: ["var(--font-cormorant)", "serif"],
+        body:    ["var(--font-manrope)",  "system-ui", "sans-serif"],
       },
       colors: {
         /* ── Exact logo colors ── */
