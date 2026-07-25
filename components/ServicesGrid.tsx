@@ -180,6 +180,10 @@ function ServiceCard({ service, index }: { service: ServiceCard; index: number }
         transition: { type: "spring", stiffness: 300, damping: 20 },
       }}
       style={{ marginTop: verticalOffset }}
+      onClick={() => {
+        const el = document.getElementById("contact");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }}
       className="group relative flex flex-col gap-5 p-7 rounded-[20px] cursor-pointer"
       role="article"
       aria-label={service.title}
@@ -222,8 +226,17 @@ function ServiceCard({ service, index }: { service: ServiceCard; index: number }
         </div>
 
         {/* CTA link */}
-        <div
-          className="flex items-center gap-2 text-[16px] font-body font-semibold transition-all duration-200 group-hover:gap-3"
+        <a
+          href="#contact"
+          onClick={(e) => {
+            e.stopPropagation();
+            const el = document.getElementById("contact");
+            if (el) {
+              e.preventDefault();
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="flex items-center gap-2 text-[16px] font-body font-semibold transition-all duration-200 group-hover:gap-3 w-fit"
           style={{ color: accentColor }}
         >
           Learn More
@@ -241,7 +254,7 @@ function ServiceCard({ service, index }: { service: ServiceCard; index: number }
               d="M17 8l4 4m0 0l-4 4m4-4H3"
             />
           </svg>
-        </div>
+        </a>
       </div>
 
       {/* Top accent line */}
