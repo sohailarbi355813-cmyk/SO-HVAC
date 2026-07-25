@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Barlow, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-
-const barlow = Barlow({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-barlow",
-  display: "swap",
-});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${barlow.variable} ${inter.variable} font-body antialiased`}
+        className={`${inter.variable} font-body antialiased`}
         style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
       >
         <ThemeProvider>{children}</ThemeProvider>

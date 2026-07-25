@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Aquatico", "var(--font-barlow)", "system-ui", "sans-serif"],
+        display: ["Tempting", "var(--font-inter)", "system-ui", "sans-serif"],
         body:    ["var(--font-inter)",  "system-ui", "sans-serif"],
       },
       colors: {

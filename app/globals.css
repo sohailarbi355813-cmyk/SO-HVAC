@@ -1,18 +1,18 @@
 /* ═══════════════════════════════════════════════════════
-   AQUATICO — Self-hosted font (public/fonts/)
+   TEMPTING — Self-hosted font (public/fonts/)
    Used for ALL headings, display text, CTAs, labels
    ═══════════════════════════════════════════════════════ */
 @font-face {
-  font-family: 'Aquatico';
-  src: url('/fonts/Aquatico-Regular.woff') format('woff'),
-       url('/fonts/Aquatico-Regular.otf') format('opentype');
+  font-family: 'Tempting';
+  src: url('/fonts/Tempting.otf') format('opentype'),
+       url('/fonts/Tempting.ttf') format('truetype');
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
 
-/* ── Barlow as fallback geometric sans ── */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+/* ── Inter as the primary sans-serif ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -97,7 +97,7 @@ body {
 
 /* ─── Typography ─── */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Aquatico', 'Barlow', system-ui, sans-serif;
+  font-family: 'Tempting', 'Inter', system-ui, sans-serif;
   font-weight: 400;
   line-height: 1.12;
   letter-spacing: -0.02em;
@@ -275,7 +275,7 @@ p {
   padding: 0.875rem 2rem;
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: #fff;
-  font-family: 'Aquatico', 'Barlow', sans-serif;
+  font-family: 'Tempting', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
@@ -299,7 +299,7 @@ p {
   padding: 0.875rem 2rem;
   background: transparent;
   color: var(--text-primary);
-  font-family: 'Aquatico', 'Barlow', sans-serif;
+  font-family: 'Tempting', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
@@ -329,7 +329,7 @@ p {
   padding: 0.875rem 2rem;
   background: linear-gradient(135deg, #1a2e5a 0%, #0f1e3d 100%);
   color: #fff;
-  font-family: 'Aquatico', 'Barlow', sans-serif;
+  font-family: 'Tempting', 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
