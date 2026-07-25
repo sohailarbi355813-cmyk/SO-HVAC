@@ -24,16 +24,17 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.1 }}
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
-        scrolled
-          ? "bg-[var(--bg-primary)]/80 backdrop-blur-xl border-b border-[var(--border-color)] shadow-[var(--shadow-sm)]"
-          : "bg-transparent"
-      }`}
-    >
+    <>
+      <motion.header
+        initial={{ y: -80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.1 }}
+        className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
+          scrolled
+            ? "bg-[var(--bg-primary)]/80 backdrop-blur-xl border-b border-[var(--border-color)] shadow-[var(--shadow-sm)]"
+            : "bg-transparent"
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center justify-between h-[72px]">
         {/* Logo */}
         <Link href="/" className="flex items-center group" id="nav-logo">
@@ -106,9 +107,10 @@ export default function Navbar() {
             </div>
           </motion.button>
         </div>
-      </div>
+        </div>
+      </motion.header>
 
-      {/* Mobile menu (Premium Full-Screen Overlay) */}
+      {/* Mobile menu (Premium Full-Screen Overlay placed outside transformed header so it anchors perfectly to viewport at any scroll position) */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -116,10 +118,10 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="md:hidden fixed top-[72px] left-0 right-0 bottom-0 bg-[var(--bg-primary)]/90 backdrop-blur-2xl border-t border-[var(--border-color)]/30 z-40 overflow-y-auto"
+            className="md:hidden fixed top-[72px] left-0 right-0 h-[calc(100vh-72px)] bg-[var(--bg-primary)]/98 backdrop-blur-3xl border-t border-[var(--border-color)]/30 z-[95] overflow-y-auto"
             id="mobile-menu"
           >
-            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)] gap-10 px-6 py-12">
+            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-140px)] gap-10 px-6 py-12">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.label}
@@ -148,6 +150,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   );
 }
