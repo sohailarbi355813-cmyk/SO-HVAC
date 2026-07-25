@@ -41,7 +41,14 @@ export default function Navbar() {
             whileHover={{ scale: 1.04 }}
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
           >
-            <SOHVACLogo variant="navbar" width={200} />
+            {/* Desktop Logo */}
+            <div className="hidden sm:block">
+              <SOHVACLogo variant="navbar" width={200} />
+            </div>
+            {/* Mobile Logo */}
+            <div className="block sm:hidden">
+              <SOHVACLogo variant="navbar" width={150} />
+            </div>
           </motion.div>
         </Link>
 

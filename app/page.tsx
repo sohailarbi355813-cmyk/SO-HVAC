@@ -4,7 +4,6 @@ import TrustMarquee from "@/components/TrustMarquee";
 import ServicesGrid from "@/components/ServicesGrid";
 import BundleCards from "@/components/BundleCards";
 import Footer from "@/components/Footer";
-import WhatsAppFAB from "@/components/WhatsAppFAB";
 import WaveDivider from "@/components/WaveDivider";
 
 export default function Home() {
@@ -43,9 +42,6 @@ export default function Home() {
       <WaveDivider fill="var(--bg-primary)" direction="up" />
 
       <Footer />
-
-      {/* Floating WhatsApp CTA */}
-      <WhatsAppFAB phoneNumber="+10000000000" />
     </main>
   );
 }

@@ -43,16 +43,16 @@ export default function HeroSection() {
           className="w-full lg:w-[25%] flex flex-col items-center lg:items-start justify-start gap-6 pointer-events-auto text-center lg:text-left"
         >
           {/* Blue Circular Badge */}
-          <div className="relative w-28 h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4">
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex flex-col items-center justify-center text-center p-4 mt-8 lg:mt-0">
             <div className="absolute inset-0 bg-[#0284c7] rounded-full opacity-15" />
-            <span className="text-[var(--brand-navy)] font-display font-black text-3xl md:text-5xl block">NO. 1</span>
-            <span className="text-[#0284c7] text-[9px] md:text-[11px] font-bold uppercase leading-tight mt-1 tracking-widest">
+            <span className="text-[var(--brand-navy)] font-display font-black text-2xl sm:text-3xl md:text-5xl block">NO. 1</span>
+            <span className="text-[#0284c7] text-[8px] sm:text-[9px] md:text-[11px] font-bold uppercase leading-tight mt-1 tracking-widest">
               Brand in Water<br/>Filtration<br/>Systems
             </span>
           </div>
 
           {/* Main Headline Left */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
+          <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
             Canada <br />
             has <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">water<br/>problem</span>
@@ -127,9 +127,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6 }}
-          className="w-full lg:w-[25%] flex flex-col justify-end lg:justify-start items-center lg:items-end text-center lg:text-right z-20 mt-auto lg:mt-0 pt-0 lg:pt-28 pointer-events-auto pb-12 lg:pb-0"
+          className="w-full lg:w-[25%] flex flex-col justify-end lg:justify-start items-center lg:items-end text-center lg:text-right z-20 mt-auto lg:mt-0 pt-0 lg:pt-28 pointer-events-auto pb-20 lg:pb-0"
         >
-          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
+          <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[var(--text-primary)] leading-[1.05] uppercase tracking-tight">
             We <br />
             have <br />
             <span className="font-bold text-[#0284c7] drop-shadow-sm">the<br/>solution</span>
