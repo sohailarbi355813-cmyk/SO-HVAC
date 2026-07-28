@@ -247,10 +247,14 @@ export default function HeroSection() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="e.g. Amandeep Singh"
-                    className="control w-full h-12 px-4 rounded-xl text-[#F1F5F9] placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-[#E8650A]/50 focus:border-[#E8650A] transition-all duration-200 text-sm shadow-inner"
+                    className="control w-full h-12 px-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm shadow-inner"
                     style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.4)",
-                      border: "1px solid rgba(255, 255, 255, 0.12)"
+                      backgroundColor: "rgba(255, 255, 255, 0.03)",
+                      backdropFilter: "blur(8px)",
+                      WebkitBackdropFilter: "blur(8px)",
+                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      appearance: "none",
+                      WebkitAppearance: "none"
                     }}
                   />
                 </div>
@@ -265,10 +269,14 @@ export default function HeroSection() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="(905) 555-0000"
-                    className="control w-full h-12 px-4 rounded-xl text-[#F1F5F9] placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-[#E8650A]/50 focus:border-[#E8650A] transition-all duration-200 text-sm shadow-inner"
+                    className="control w-full h-12 px-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm shadow-inner"
                     style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.4)",
-                      border: "1px solid rgba(255, 255, 255, 0.12)"
+                      backgroundColor: "rgba(255, 255, 255, 0.03)",
+                      backdropFilter: "blur(8px)",
+                      WebkitBackdropFilter: "blur(8px)",
+                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      appearance: "none",
+                      WebkitAppearance: "none"
                     }}
                   />
                 </div>
@@ -277,27 +285,45 @@ export default function HeroSection() {
                   <label className="field block text-sm font-semibold text-[#D6EAF8] tracking-wide">
                     What do you need?
                   </label>
-                  <select
-                    value={selectedService}
-                    onChange={(e) => setSelectedService(e.target.value)}
-                    required
-                    className="control w-full h-12 px-4 rounded-xl text-[#F1F5F9] focus:outline-none focus:ring-2 focus:ring-[#E8650A]/50 focus:border-[#E8650A] transition-all duration-200 text-sm shadow-inner"
-                    style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.4)",
-                      border: "1px solid rgba(255, 255, 255, 0.12)"
-                    }}
-                  >
-                    <option value="" disabled className="bg-[#0B0E11] text-white/50">Select a service</option>
-                    <option value="ac" className="bg-[#0B0E11] text-white">Air Conditioners</option>
-                    <option value="furnace" className="bg-[#0B0E11] text-white">Furnaces</option>
-                    <option value="heatpump" className="bg-[#0B0E11] text-white">Heat Pumps</option>
-                    <option value="tankless" className="bg-[#0B0E11] text-white">Tankless Water Heaters</option>
-                    <option value="waterheater" className="bg-[#0B0E11] text-white">Water Heaters</option>
-                    <option value="repairs" className="bg-[#0B0E11] text-white">Repairs</option>
-                    <option value="maintenance" className="bg-[#0B0E11] text-white">Maintenance</option>
-                    <option value="secondopinion" className="bg-[#0B0E11] text-white">Second Opinions</option>
-                    <option value="emergency" className="bg-[#0B0E11] text-white">Emergency Service</option>
-                  </select>
+                  <div className="relative w-full group/select">
+                    <select
+                      value={selectedService}
+                      onChange={(e) => setSelectedService(e.target.value)}
+                      required
+                      className="control w-full h-12 pl-4 pr-11 rounded-xl text-white focus:outline-none transition-all duration-250 text-sm shadow-inner cursor-pointer"
+                      style={{
+                        backgroundColor: "rgba(255, 255, 255, 0.03)",
+                        backdropFilter: "blur(8px)",
+                        WebkitBackdropFilter: "blur(8px)",
+                        border: "1px solid rgba(255, 255, 255, 0.15)",
+                        appearance: "none",
+                        WebkitAppearance: "none"
+                      }}
+                    >
+                      <option value="" disabled className="bg-[#0B0E11] text-white/50">Select a service</option>
+                      <option value="ac" className="bg-[#0B0E11] text-white">Air Conditioners</option>
+                      <option value="furnace" className="bg-[#0B0E11] text-white">Furnaces</option>
+                      <option value="heatpump" className="bg-[#0B0E11] text-white">Heat Pumps</option>
+                      <option value="tankless" className="bg-[#0B0E11] text-white">Tankless Water Heaters</option>
+                      <option value="waterheater" className="bg-[#0B0E11] text-white">Water Heaters</option>
+                      <option value="repairs" className="bg-[#0B0E11] text-white">Repairs</option>
+                      <option value="maintenance" className="bg-[#0B0E11] text-white">Maintenance</option>
+                      <option value="secondopinion" className="bg-[#0B0E11] text-white">Second Opinions</option>
+                      <option value="emergency" className="bg-[#0B0E11] text-white">Emergency Service</option>
+                    </select>
+                    {/* Custom Minimalist Tech-Forward SVG Chevron */}
+                    <svg 
+                      className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/60 group-focus-within/select:text-[#D6EAF8] group-focus-within/select:rotate-180 transition-all duration-300" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2.25" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                  </div>
                 </div>
 
                 <div className="space-y-2">
@@ -309,10 +335,14 @@ export default function HeroSection() {
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder="e.g. Furnace is 18 years old, got a quote for $9,000…"
-                    className="control w-full p-4 rounded-xl text-[#F1F5F9] placeholder:text-white/35 focus:outline-none focus:ring-2 focus:ring-[#E8650A]/50 focus:border-[#E8650A] transition-all duration-200 text-sm resize-none shadow-inner"
+                    className="control w-full p-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm resize-none shadow-inner"
                     style={{
-                      backgroundColor: "rgba(0, 0, 0, 0.4)",
-                      border: "1px solid rgba(255, 255, 255, 0.12)"
+                      backgroundColor: "rgba(255, 255, 255, 0.03)",
+                      backdropFilter: "blur(8px)",
+                      WebkitBackdropFilter: "blur(8px)",
+                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      appearance: "none",
+                      WebkitAppearance: "none"
                     }}
                   />
                 </div>

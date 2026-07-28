@@ -526,4 +526,43 @@ a.rounded-full:active {
   }
 }
 
+/* -----------------------------------------------------------------------------
+   $10k+ Studio Frosted Form Controls (.form-card inputs & .control)
+----------------------------------------------------------------------------- */
+.form-card input,
+.form-card select,
+.form-card textarea,
+.control {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #FFFFFF !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+  outline: none !important;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus,
+.control:focus,
+.form-card input:focus-visible,
+.form-card select:focus-visible,
+.form-card textarea:focus-visible,
+.control:focus-visible {
+  border-color: #D6EAF8 !important;
+  box-shadow: 0 0 20px rgba(214, 234, 248, 0.35), inset 0 0 8px rgba(214, 234, 248, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Hide IE / Edge default dropdown select arrow */
+.form-card select::-ms-expand,
+.control::-ms-expand {
+  display: none !important;
+}
+
+
 
