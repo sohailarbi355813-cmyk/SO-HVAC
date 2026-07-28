@@ -49,6 +49,33 @@ export default function Home() {
 
   return (
     <main className="relative overflow-x-hidden bg-[#0B0E11] bg-obsidian text-white selection:bg-[#FF6B00] selection:text-white">
+      {/* ── $10k+ Studio Fixed Atmospheric Radial Gradients (Floating Glass Proof) ── */}
+      <div className="pointer-events-none fixed inset-0 z-[1] overflow-hidden">
+        {/* Massive Solar Amber / Orange Floating Orb (Top Left Anchor) */}
+        <div 
+          className="absolute -top-[15%] -left-[10%] w-[700px] sm:w-[950px] h-[700px] sm:h-[950px] rounded-full blur-[170px] sm:blur-[210px] pointer-events-none animate-pulse opacity-85"
+          style={{
+            background: "radial-gradient(circle, rgba(232, 101, 10, 0.16) 0%, rgba(201, 85, 8, 0.08) 45%, transparent 75%)",
+            animationDuration: "12s"
+          }}
+        />
+        {/* Deep Cobalt / Sapphire Blue Floating Orb (Mid Right Anchor) */}
+        <div 
+          className="absolute top-[35%] -right-[15%] w-[800px] sm:w-[1050px] h-[800px] sm:h-[1050px] rounded-full blur-[190px] sm:blur-[230px] pointer-events-none opacity-90"
+          style={{
+            background: "radial-gradient(circle, rgba(45, 125, 210, 0.18) 0%, rgba(29, 100, 178, 0.08) 50%, transparent 80%)"
+          }}
+        />
+        {/* Subtle Pale Jewel Accent Halo (Bottom Central Anchor) */}
+        <div 
+          className="absolute bottom-[5%] left-[20%] w-[600px] sm:w-[850px] h-[600px] sm:h-[850px] rounded-full blur-[160px] sm:blur-[190px] pointer-events-none opacity-75 animate-pulse"
+          style={{
+            background: "radial-gradient(circle, rgba(214, 234, 248, 0.12) 0%, rgba(214, 234, 248, 0.04) 50%, transparent 75%)",
+            animationDuration: "16s"
+          }}
+        />
+      </div>
+
       {/* 1. Utility Top Bar */}
       <UtilityBar />
 
