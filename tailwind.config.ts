@@ -15,6 +15,19 @@ const config: Config = {
         sans:    ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       colors: {
+        /* ── $10k+ Award-Winning Luxury Studio Custom Colors ── */
+        obsidian: {
+          DEFAULT: "#0B0E11",
+          canvas: "#0B0E11",
+          card: "#151B24",
+          surface: "rgba(21, 27, 36, 0.85)",
+        },
+        jewel: {
+          DEFAULT: "#D6EAF8",
+          pale: "#D6EAF8",
+          ice: "#EAF4FB",
+          glow: "rgba(214, 234, 248, 0.45)",
+        },
         /* ── Figma Brand Tokens (01 Primitives & 02 Semantic) ── */
         navy: {
           900: "#0B1E33",

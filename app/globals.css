@@ -357,7 +357,7 @@ a.rounded-full:active {
   border-color: #BAE2FD !important;
 }
 
-/* All Glassmorphic Bento Cards & Surface Containers */
+/* All Glassmorphic Bento Cards & Surface Containers (Physics animations handled via Framer Motion) */
 .svc-card,
 .step,
 .pay-card,
@@ -365,25 +365,8 @@ a.rounded-full:active {
 .rev-card,
 .faq-item {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
+  transition: border-color 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
   will-change: transform, border-color, box-shadow;
-}
-
-.svc-card:hover,
-.svc-card:focus-within,
-.step:hover,
-.step:focus-within,
-.pay-card:hover,
-.pay-card:focus-within,
-.form-card:hover,
-.form-card:focus-within,
-.rev-card:hover,
-.rev-card:focus-within,
-.faq-item:hover,
-.faq-item:focus-within {
-  transform: scale(1.02) !important;
-  border-color: rgba(214, 234, 248, 0.95) !important;
-  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.85), 0 0 32px rgba(214, 234, 248, 0.32) !important;
 }
 
 /* -----------------------------------------------------------------------------
