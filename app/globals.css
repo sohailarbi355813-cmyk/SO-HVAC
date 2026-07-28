@@ -519,30 +519,32 @@ a.rounded-full:active {
 .form-card input,
 .form-card select,
 .form-card textarea,
-.control {
+.control:not([type="range"]) {
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  background-color: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid #D6EAF8 !important;
   color: #FFFFFF !important;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+  transition: box-shadow 0.25s ease, transform 0.25s ease !important;
   outline: none !important;
 }
 
 .form-card input:focus,
 .form-card select:focus,
 .form-card textarea:focus,
-.control:focus,
+.control:not([type="range"]):focus,
 .form-card input:focus-visible,
 .form-card select:focus-visible,
 .form-card textarea:focus-visible,
-.control:focus-visible {
+.control:not([type="range"]):focus-visible {
   border-color: #D6EAF8 !important;
-  box-shadow: 0 0 20px rgba(214, 234, 248, 0.35), inset 0 0 8px rgba(214, 234, 248, 0.1) !important;
-  background-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 0 25px rgba(214, 234, 248, 0.45), inset 0 0 10px rgba(214, 234, 248, 0.15) !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 /* Hide IE / Edge default dropdown select arrow */

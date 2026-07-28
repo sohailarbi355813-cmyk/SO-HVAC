@@ -249,10 +249,11 @@ export default function HeroSection() {
                     placeholder="e.g. Amandeep Singh"
                     className="control w-full h-12 px-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm shadow-inner"
                     style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.03)",
-                      backdropFilter: "blur(8px)",
-                      WebkitBackdropFilter: "blur(8px)",
-                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      backgroundColor: "transparent",
+                      background: "transparent",
+                      backdropFilter: "blur(12px)",
+                      WebkitBackdropFilter: "blur(12px)",
+                      border: "1px solid #D6EAF8",
                       appearance: "none",
                       WebkitAppearance: "none"
                     }}
@@ -271,10 +272,11 @@ export default function HeroSection() {
                     placeholder="(905) 555-0000"
                     className="control w-full h-12 px-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm shadow-inner"
                     style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.03)",
-                      backdropFilter: "blur(8px)",
-                      WebkitBackdropFilter: "blur(8px)",
-                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      backgroundColor: "transparent",
+                      background: "transparent",
+                      backdropFilter: "blur(12px)",
+                      WebkitBackdropFilter: "blur(12px)",
+                      border: "1px solid #D6EAF8",
                       appearance: "none",
                       WebkitAppearance: "none"
                     }}
@@ -292,10 +294,11 @@ export default function HeroSection() {
                       required
                       className="control w-full h-12 pl-4 pr-11 rounded-xl text-white focus:outline-none transition-all duration-250 text-sm shadow-inner cursor-pointer"
                       style={{
-                        backgroundColor: "rgba(255, 255, 255, 0.03)",
-                        backdropFilter: "blur(8px)",
-                        WebkitBackdropFilter: "blur(8px)",
-                        border: "1px solid rgba(255, 255, 255, 0.15)",
+                        backgroundColor: "transparent",
+                        background: "transparent",
+                        backdropFilter: "blur(12px)",
+                        WebkitBackdropFilter: "blur(12px)",
+                        border: "1px solid #D6EAF8",
                         appearance: "none",
                         WebkitAppearance: "none"
                       }}
@@ -311,17 +314,20 @@ export default function HeroSection() {
                       <option value="secondopinion" className="bg-[#0B0E11] text-white">Second Opinions</option>
                       <option value="emergency" className="bg-[#0B0E11] text-white">Emergency Service</option>
                     </select>
-                    {/* Custom Minimalist Tech-Forward SVG Chevron */}
+                    {/* Custom Minimalist Dual SVG Arrows for Dropdown */}
                     <svg 
-                      className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/60 group-focus-within/select:text-[#D6EAF8] group-focus-within/select:rotate-180 transition-all duration-300" 
+                      className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#D6EAF8] group-focus-within/select:scale-115 group-focus-within/select:drop-shadow-[0_0_10px_rgba(214,234,248,0.8)] transition-all duration-300" 
                       viewBox="0 0 24 24" 
                       fill="none" 
                       stroke="currentColor" 
-                      strokeWidth="2.25" 
+                      strokeWidth="2.5" 
                       strokeLinecap="round" 
                       strokeLinejoin="round"
                     >
-                      <path d="m6 9 6 6 6-6"/>
+                      {/* Up Arrow */}
+                      <path d="m7 9 5-5 5 5" />
+                      {/* Down Arrow */}
+                      <path d="m7 15 5 5 5-5" />
                     </svg>
                   </div>
                 </div>
@@ -337,10 +343,11 @@ export default function HeroSection() {
                     placeholder="e.g. Furnace is 18 years old, got a quote for $9,000…"
                     className="control w-full p-4 rounded-xl text-white placeholder:text-white/35 focus:outline-none transition-all duration-250 text-sm resize-none shadow-inner"
                     style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.03)",
-                      backdropFilter: "blur(8px)",
-                      WebkitBackdropFilter: "blur(8px)",
-                      border: "1px solid rgba(255, 255, 255, 0.15)",
+                      backgroundColor: "transparent",
+                      background: "transparent",
+                      backdropFilter: "blur(12px)",
+                      WebkitBackdropFilter: "blur(12px)",
+                      border: "1px solid #D6EAF8",
                       appearance: "none",
                       WebkitAppearance: "none"
                     }}
