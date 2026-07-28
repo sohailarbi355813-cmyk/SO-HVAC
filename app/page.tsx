@@ -4,9 +4,9 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import UtilityBar from "@/components/UtilityBar";
 import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
+import Hero from "@/components/Hero";
 import TrustMarquee from "@/components/TrustMarquee";
-import ServicesGrid from "@/components/ServicesGrid";
+import ServicesBento from "@/components/ServicesBento";
 import SecondOpinionPromo from "@/components/SecondOpinionPromo";
 import HowItWorks from "@/components/HowItWorks";
 import InstallCamShowcase from "@/components/InstallCamShowcase";
@@ -82,27 +82,14 @@ export default function Home() {
       {/* 2. Main Navigation Bar */}
       <Navbar />
 
-      {/* 3. Hero & Floating Quote Form Card Wrapped in Framer Motion */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.65, ease: "easeOut" }}
-      >
-        <HeroSection />
-      </motion.div>
+      {/* 3. Hero & Floating Smoked Glass Quote Form Card */}
+      <Hero />
 
       {/* 4. Trust Strip */}
       <TrustMarquee />
 
-      {/* 5. Our Services - Asymmetrical Bento Grid Matrix */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.75, type: "spring", damping: 22 }}
-      >
-        <ServicesGrid />
-      </motion.div>
+      {/* 5. Our Services - Smoked Glass Asymmetrical Bento Matrix */}
+      <ServicesBento />
 
       {/* 6. Free Second Opinion Promo */}
       <SecondOpinionPromo />

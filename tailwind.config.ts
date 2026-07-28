@@ -16,6 +16,8 @@ const config: Config = {
       },
       colors: {
         /* ── $10k+ Award-Winning Luxury Studio Custom Colors ── */
+        "obsidian-slate": "#0B0E11",
+        "pale-jewel": "#D6EAF8",
         obsidian: {
           DEFAULT: "#0B0E11",
           canvas: "#0B0E11",
