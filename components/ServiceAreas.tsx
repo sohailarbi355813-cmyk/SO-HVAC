@@ -1,0 +1,64 @@
+"use client";
+
+import React from "react";
+import { MapPin } from "lucide-react";
+
+const CITIES = [
+  "Mississauga", "Brampton",
+  "Toronto", "Etobicoke",
+  "Oakville", "Milton",
+  "Vaughan", "Georgetown",
+  "Burlington", "Caledon",
+  "Scarborough", "North York",
+];
+
+export default function ServiceAreas() {
+  return (
+    <section id="areas" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#03070F] text-white border-b border-white/10 select-none overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
+          <div className="text-[#E8650A] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
+            Where We Work
+          </div>
+          <h2 
+            style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
+            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
+          >
+            Proudly Serving the Greater Toronto Area
+          </h2>
+          <p className="text-base sm:text-lg text-white/80 leading-relaxed font-light max-w-2xl mx-auto">
+            Based in Mississauga, our SO Certified™ crews cover the entire GTA &mdash; usually with same-week installation and 24/7 emergency response.
+          </p>
+        </div>
+
+        {/* City Chips */}
+        <div className="city-chips flex flex-wrap items-center justify-center gap-3 sm:gap-4 max-w-3xl mx-auto mb-16">
+          {CITIES.map((city, idx) => (
+            <span
+              key={idx}
+              className="px-6 py-3 rounded-full text-sm sm:text-base font-semibold text-[#D6EAF8] cursor-default select-none transition-all duration-300"
+            >
+              {city}
+            </span>
+          ))}
+        </div>
+
+        {/* Map Placeholder Stage */}
+        <div className="max-w-4xl mx-auto">
+          <div className="h-64 sm:h-80 rounded-[32px] bg-[#0B0E11] border border-white/10 p-8 flex flex-col items-center justify-center text-center space-y-4 shadow-inner">
+            <div className="w-12 h-12 rounded-2xl bg-[#E8650A]/10 border border-[#E8650A]/30 text-[#E8650A] flex items-center justify-center shadow-sm">
+              <MapPin className="w-6 h-6" />
+            </div>
+            <p className="text-sm sm:text-base text-white/70 font-mono font-light max-w-md">
+              EMBED &mdash; Google Map (GTA service radius)<br />
+              <span className="text-xs text-white/40">Lazy-load below the fold &middot; facade pattern for CWV</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}

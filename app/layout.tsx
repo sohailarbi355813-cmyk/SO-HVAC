@@ -1,32 +1,35 @@
 import type { Metadata } from "next";
-import { Manrope, Cormorant_Garamond } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import LenisScrollProvider from "@/components/LenisScrollProvider";
+import IntersectionObserverScript from "@/components/IntersectionObserverScript";
 
-const cormorant = Cormorant_Garamond({
+// $10k Award-Winning Typography Hierarchy: Precision Engineering (Space Grotesk + Inter)
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-space",
   display: "swap",
 });
 
-const manrope = Manrope({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-manrope",
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "SO HVAC | Second Opinion. First Choice. — HVAC & Water Purification",
+  title: "SO HVAC | Second Opinion. First Choice. — GTA's Premier Mechanical Engineers",
   description:
-    "SO HVAC provides premium HVAC and water purification solutions. 10-Year Warranty, Free In-Home Assessment, Professional Installation with Permit Included. Serving your community with expert AC, Furnace, Heat Pump, and Water Purification services.",
+    "Experience next-generation inverter heat pumps and cryo-cooling architecture. We help Greater Toronto Area homeowners make empowered mechanical choices before spending thousands. Transparent quotes, InstallCam™ 100% verified quality, and zero sales pressure.",
   keywords:
-    "HVAC, AC installation, furnace, heat pump, water purification, water softener, reverse osmosis, SO HVAC",
+    "HVAC GTA, luxury AC installation Mississauga, Toronto heat pump rebates, Daikin Mitsubishi inverter, cryo cooling, free second opinion, SO HVAC",
   openGraph: {
-    title: "SO HVAC | Second Opinion. First Choice.",
+    title: "SO HVAC | Second Opinion. First Choice. — GTA's Trusted Team",
     description:
-      "Premium HVAC and water purification solutions. 10-Year Warranty, Free In-Home Assessment.",
+      "Transparent quotes, InstallCam™ verified installs, and zero-pressure second opinions across the Greater Toronto Area.",
     type: "website",
     locale: "en_CA",
   },
@@ -38,13 +41,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body
-        className={`${cormorant.variable} ${manrope.variable} font-body antialiased`}
-        style={{ fontFamily: "var(--font-manrope), system-ui, sans-serif" }}
+        className="bg-[#050B14] text-white font-sans antialiased selection:bg-[#FF6B00] selection:text-white"
+        style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
+        suppressHydrationWarning
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <LenisScrollProvider>
+          <IntersectionObserverScript />
+          <ThemeProvider>{children}</ThemeProvider>
+        </LenisScrollProvider>
       </body>
     </html>
   );
 }
+

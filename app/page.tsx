@@ -1,47 +1,66 @@
+import UtilityBar from "@/components/UtilityBar";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustMarquee from "@/components/TrustMarquee";
 import ServicesGrid from "@/components/ServicesGrid";
-import BundleCards from "@/components/BundleCards";
+import SecondOpinionPromo from "@/components/SecondOpinionPromo";
+import HowItWorks from "@/components/HowItWorks";
+import InstallCamShowcase from "@/components/InstallCamShowcase";
+import FinancingSection from "@/components/FinancingSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import ServiceAreas from "@/components/ServiceAreas";
+import FaqSection from "@/components/FaqSection";
+import FinalCtaSection from "@/components/FinalCtaSection";
 import Footer from "@/components/Footer";
-import WaveDivider from "@/components/WaveDivider";
+import StickyBottomBar from "@/components/StickyBottomBar";
 
 export default function Home() {
   return (
-    <main className="relative overflow-x-hidden">
+    <main className="relative overflow-x-hidden bg-[#0B0E11] text-white selection:bg-[#FF6B00] selection:text-white">
+      {/* 1. Utility Top Bar */}
+      <UtilityBar />
+
+      {/* 2. Main Navigation Bar */}
       <Navbar />
 
-      {/* Hero */}
+      {/* 3. Hero & Quote Form Card */}
       <HeroSection />
 
-      {/* Wave: Hero → Marquee */}
-      <WaveDivider fill="var(--bg-secondary)" direction="down" />
+      {/* 4. Trust Strip */}
+      <TrustMarquee />
 
-      {/* Trust Marquee */}
-      <section className="section-alt py-10">
-        <TrustMarquee />
-      </section>
+      {/* 5. Our Services */}
+      <ServicesGrid />
 
-      {/* Wave: Marquee → Services */}
-      <WaveDivider fill="var(--bg-primary)" direction="up" />
+      {/* 6. Free Second Opinion Promo */}
+      <SecondOpinionPromo />
 
-      {/* Services */}
-      <section id="services" className="py-28 px-4">
-        <ServicesGrid />
-      </section>
+      {/* 7. How It Works (Process) */}
+      <HowItWorks />
 
-      {/* Wave: Services → Bundles */}
-      <WaveDivider fill="var(--bg-secondary)" direction="down" />
+      {/* 8. Before & After (InstallCam Proof) */}
+      <InstallCamShowcase />
 
-      {/* Bundles */}
-      <section id="bundles" className="section-alt py-28 px-4">
-        <BundleCards />
-      </section>
+      {/* 9. Flexible Financing */}
+      <FinancingSection />
 
-      {/* Wave: Bundles → Footer */}
-      <WaveDivider fill="var(--bg-primary)" direction="up" />
+      {/* 10. Reviews */}
+      <ReviewsSection />
 
+      {/* 11. Service Areas */}
+      <ServiceAreas />
+
+      {/* 12. Common Questions (FAQ) */}
+      <FaqSection />
+
+      {/* 13. Final CTA */}
+      <FinalCtaSection />
+
+      {/* 14. Footer */}
       <Footer />
+
+      {/* 15. Sticky Bottom CTA Bar */}
+      <StickyBottomBar />
     </main>
   );
 }
