@@ -491,4 +491,39 @@ a.rounded-full:active {
   text-shadow: 0 0 24px rgba(214, 234, 248, 0.45) !important;
 }
 
+/* -----------------------------------------------------------------------------
+   $10k+ Studio Highly Asymmetrical Bento Services Grid (.svc-list)
+----------------------------------------------------------------------------- */
+.svc-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  width: 100%;
+}
+
+@media (max-width: 639px) {
+  .svc-list {
+    grid-template-columns: 1fr !important;
+  }
+  .svc-list .svc-card {
+    aspect-ratio: auto !important;
+  }
+}
+
+.svc-list .svc-card[data-service="Air Conditioners"],
+.svc-list .svc-card[data-service="Emergency Service"],
+.svc-list .svc-card:first-child,
+.svc-list .svc-card:last-child {
+  grid-column: span 2 !important;
+}
+
+@media (max-width: 639px) {
+  .svc-list .svc-card[data-service="Air Conditioners"],
+  .svc-list .svc-card[data-service="Emergency Service"],
+  .svc-list .svc-card:first-child,
+  .svc-list .svc-card:last-child {
+    grid-column: span 1 !important;
+  }
+}
+
 

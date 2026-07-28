@@ -125,10 +125,12 @@ export default function ServicesGrid() {
           </p>
         </motion.div>
         
-        {/* Services List - 9 Cards in Asymmetrical Bento Matrix with Dynamic Border Spotlight */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {/* Services List - Highly Asymmetrical Bento CSS Grid (.svc-list) */}
+        <div className="svc-list max-w-5xl mx-auto">
           {SERVICES.map((svc, idx) => {
             const IconComp = svc.icon;
+            const isDouble = svc.title === "Air Conditioners" || svc.title === "Emergency Service";
+
             return (
               <motion.div
                 key={idx}
@@ -140,7 +142,12 @@ export default function ServicesGrid() {
                   boxShadow: "0 30px 90px rgba(0, 0, 0, 0.85), 0 0 32px rgba(214, 234, 248, 0.32)",
                   transition: { type: "spring", stiffness: 350, damping: 18 }
                 }}
-                className="svc-card bg-[#151B24] rounded-[28px] border border-white/[0.07] p-8 shadow-[0_15px_45px_rgba(0,0,0,0.5)] flex flex-col justify-between group cursor-pointer relative overflow-hidden"
+                data-service={svc.title}
+                className={`svc-card bg-[#151B24] rounded-[28px] border border-white/[0.07] ${
+                  isDouble
+                    ? "p-8 sm:p-10 min-h-[240px] sm:min-h-[260px] col-span-2 justify-between"
+                    : "p-6 sm:p-7 aspect-square min-h-[270px] col-span-1 justify-between"
+                } shadow-[0_15px_45px_rgba(0,0,0,0.5)] flex flex-col group cursor-pointer relative overflow-hidden`}
                 onClick={() => {
                   const el = document.getElementById("quote");
                   if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -166,16 +173,16 @@ export default function ServicesGrid() {
                 />
 
                 <div className="relative z-10">
-                  <div className="tile w-14 h-14 rounded-2xl bg-white/[0.03] border border-[#D6EAF8]/25 flex items-center justify-center text-[#D6EAF8] mb-6 group-hover:bg-[#E8650A] group-hover:border-[#E8650A] group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(214,234,248,0.08)] group-hover:shadow-[0_0_30px_rgba(232,101,10,0.55)] group-hover:scale-110">
-                    <IconComp className="w-7 h-7 stroke-[1.75] shrink-0 transition-transform duration-300 group-hover:rotate-6" />
+                  <div className={`tile ${isDouble ? "w-16 h-16 mb-7" : "w-13 h-13 mb-5"} rounded-2xl bg-white/[0.04] border border-[#D6EAF8]/30 flex items-center justify-center text-[#D6EAF8] group-hover:bg-[#E8650A] group-hover:border-[#E8650A] group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(214,234,248,0.1)] group-hover:shadow-[0_0_35px_rgba(232,101,10,0.6)] group-hover:scale-110`}>
+                    <IconComp className={`${isDouble ? "w-8 h-8" : "w-6 h-6"} stroke-[1.75] shrink-0 transition-transform duration-300 group-hover:rotate-6`} />
                   </div>
                   <h3 
                     style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
-                    className="text-xl font-bold text-white mb-3 tracking-wide group-hover:text-[#D6EAF8] transition-colors"
+                    className={`${isDouble ? "text-2xl sm:text-3xl font-extrabold mb-3.5" : "text-lg sm:text-xl font-bold mb-2.5"} text-white tracking-tight group-hover:text-[#D6EAF8] transition-colors`}
                   >
                     {svc.title}
                   </h3>
-                  <p className="text-sm text-white/70 leading-relaxed mb-6 font-light">
+                  <p className={`text-white/70 leading-relaxed font-light ${isDouble ? "text-base sm:text-lg max-w-2xl mb-8" : "text-xs sm:text-sm mb-5"}`}>
                     {svc.desc}
                   </p>
                 </div>
