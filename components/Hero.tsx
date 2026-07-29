@@ -22,6 +22,15 @@ export default function Hero() {
       ref={containerRef}
       className="relative w-full min-h-[50vh] pt-6 pb-12 lg:pt-12 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
     >
+      {/* Background Image Layer */}
+      <div 
+        className="absolute inset-0 z-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat"
+      />
+      {/* Gradient Overlay for Text Readability */}
+      <div 
+        className="absolute inset-0 z-0 bg-white/85 sm:bg-white/70 md:bg-gradient-to-r md:from-white/95 md:via-white/80 md:to-white/40"
+      />
+
       {/* Massive Stylish Typography Bleed - Light Mode */}
       <motion.div 
         style={{ y: y1, scale, rotate }}
