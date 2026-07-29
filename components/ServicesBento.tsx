@@ -47,7 +47,11 @@ export default function ServicesBento() {
       ref={containerRef}
       className="relative w-full min-h-screen bg-[#FAFAFA] text-[#0F0F0F] py-32 px-6 sm:px-12 border-b border-[#0033FF]/10 overflow-hidden"
     >
-      <motion.div style={{ y: yBg }} className="absolute inset-0 pointer-events-none opacity-10">
+      {/* HVAC Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-center bg-fixed opacity-30 pointer-events-none"
+      />
+      <motion.div style={{ y: yBg }} className="absolute inset-0 z-0 pointer-events-none opacity-10">
         <div className="absolute top-1/2 left-1/4 w-[40vw] h-[40vw] rounded-full mix-blend-multiply blur-[150px] bg-[radial-gradient(circle,_#0033FF_0%,_transparent_60%)] -translate-y-1/2" />
       </motion.div>
 
