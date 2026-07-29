@@ -33,7 +33,7 @@ export default function Hero() {
       >
         <div className="max-w-3xl">
           <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-sans font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
-            Smart <span className="relative inline-block italic font-display text-[#3B82F6]">HVAC</span><br /> Solutions for Modern Homes
+            Smart <span className="relative inline-block italic font-display text-[#DC2626]">HVAC</span><br /> Solutions for Modern Homes
           </h2>
         </div>
 
