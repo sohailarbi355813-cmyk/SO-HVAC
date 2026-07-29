@@ -47,7 +47,7 @@ export default function EmergencyService() {
           <img 
             src="/expert-hvac.jpg" 
             alt="Emergency HVAC technicians" 
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
         </div>
 
