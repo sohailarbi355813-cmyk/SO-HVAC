@@ -75,8 +75,6 @@ export default function Home() {
         />
       </div>
 
-      {/* 1. Utility Top Bar */}
-      <UtilityBar />
 
       {/* 2. Main Navigation Bar */}
       <Navbar />
