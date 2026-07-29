@@ -31,10 +31,10 @@ export default function HowItWorks() {
     <section id="process" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#FAFAFA] text-[#0F0F0F] border-b border-[#0F0F0F]/10 select-none overflow-hidden">
       {/* HVAC Background Image */}
       <div 
-        className="absolute inset-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-center bg-fixed opacity-15 mix-blend-luminosity pointer-events-none"
+        className="absolute inset-0 z-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-center bg-fixed opacity-20 pointer-events-none"
       />
-      {/* Ambient background accent overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA] via-[#FAFAFA]/70 to-[#FAFAFA] pointer-events-none" />
+      {/* Light overlay to ensure text remains readable */}
+      <div className="absolute inset-0 z-0 bg-white/60 backdrop-blur-[2px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
         
         {/* Section Header */}
