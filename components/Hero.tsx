@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[85vh] py-24 lg:py-32 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-center justify-center selection:bg-[#0033FF] selection:text-white"
+      className="relative w-full min-h-[70vh] py-16 lg:py-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-center justify-center selection:bg-[#0033FF] selection:text-white"
     >
       {/* Massive Stylish Typography Bleed - Light Mode */}
       <motion.div 

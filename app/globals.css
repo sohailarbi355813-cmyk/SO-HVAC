@@ -125,38 +125,7 @@ h1, h2, h3 {
   border-color: rgba(214, 234, 248, 0.2);
 }
 
-/* -----------------------------------------------------------------------------
-   $10k+ Studio Hollow Transparent Tokens (.badges in Hero & .city-chips in Areas)
------------------------------------------------------------------------------ */
-.badges .chip-ice,
-.badges > *,
-.city-chips > span,
-.city-chips > * {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: 1px solid rgba(30, 45, 66, 0.85) !important;
-  color: #D6EAF8 !important;
-  border-radius: 9999px !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  box-shadow: none !important;
-  transition: border-color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, color 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-}
-
-.badges .chip-ice:hover,
-.badges > *:hover,
-.city-chips > span:hover,
-.city-chips > *:hover {
-  background: transparent !important;
-  background-color: transparent !important;
-  border-color: rgba(214, 234, 248, 0.95) !important;
-  color: #FFFFFF !important;
-  box-shadow: 0 0 20px rgba(214, 234, 248, 0.35) !important;
-  transform: scale(1.03) !important;
-}
+/* Removed city-chips global overrides to allow Tailwind styling in components */
 
 .btn {
   display: inline-flex;
@@ -360,16 +329,14 @@ a.rounded-full:active {
 /* All Smoked Glass Bento Cards & Surface Containers (True Transparent Frosted Glass) */
 .svc-card,
 .step,
-.pay-card,
 .form-card,
-.rev-card,
 .faq-item {
   background: rgba(255, 255, 255, 0.02) !important;
   background-color: rgba(255, 255, 255, 0.02) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  transition: border-color 0.25s ease, box-shadow 0.3s ease, background-color 0.3s ease !important;
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
   will-change: transform, border-color, box-shadow, background-color;
 }
 
