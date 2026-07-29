@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[60vh] pt-16 pb-12 lg:pt-24 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
+      className="relative w-full min-h-[50vh] pt-6 pb-12 lg:pt-12 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
     >
       {/* Massive Stylish Typography Bleed - Light Mode */}
       <motion.div 
@@ -38,12 +38,9 @@ export default function Hero() {
       {/* Sharp, asymmetrical content block */}
       <motion.div 
         style={{ y: y2 }}
-        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-4 md:mt-8 border-t-2 border-b-2 border-[#0033FF]/20 py-10 md:py-16"
+        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-2 border-t-2 border-b-2 border-[#0033FF]/20 py-8 md:py-12"
       >
         <div className="max-w-3xl">
-          <p className="font-mono text-[#0033FF] uppercase tracking-[0.4em] text-xs mb-8 font-bold">
-            01 &mdash; The SO HVAC Standard
-          </p>
           <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter leading-[0.9] mb-8 text-[#0F0F0F]">
             Honest <span className="relative inline-block italic text-[#0033FF] pr-2">Climate<Swoosh color="#0033FF" className="opacity-80 translate-y-2 md:translate-y-4" /></span><br/> Control
           </h2>
