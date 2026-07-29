@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[50vh] pt-28 pb-12 lg:pt-36 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
+      className="relative w-full min-h-[50vh] -mt-[76px] pt-[100px] pb-12 lg:pt-[140px] lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
     >
       {/* Background Image Layer */}
       <div 
