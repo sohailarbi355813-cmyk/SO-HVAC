@@ -26,10 +26,6 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat"
       />
-      {/* Gradient Overlay for Text Readability */}
-      <div 
-        className="absolute inset-0 z-0 bg-white/85 sm:bg-white/70 md:bg-gradient-to-r md:from-white/95 md:via-white/80 md:to-white/40"
-      />
 
       {/* Massive Stylish Typography Bleed - Light Mode */}
       <motion.div 
