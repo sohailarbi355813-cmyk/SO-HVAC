@@ -53,9 +53,7 @@ export default function ServicesBento() {
 
       <div className="relative z-10 max-w-[90vw] mx-auto">
         <div className="mb-24">
-          <p className="font-mono text-[#0033FF] uppercase tracking-[0.4em] text-xs mb-8 font-bold">
-            03 &mdash; Capabilities
-          </p>
+
           <h2 className="text-4xl md:text-7xl font-display font-bold uppercase tracking-tighter leading-none text-[#0F0F0F] max-w-3xl">
             Everything HVAC. <br />
             Done right the first time.

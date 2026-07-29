@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustMarquee from "@/components/TrustMarquee";
 import ServicesBento from "@/components/ServicesBento";
+import EmergencyService from "@/components/EmergencyService";
 import SecondOpinionPromo from "@/components/SecondOpinionPromo";
 import HowItWorks from "@/components/HowItWorks";
 import InstallCamShowcase from "@/components/InstallCamShowcase";
@@ -87,6 +88,9 @@ export default function Home() {
 
       {/* 5. Our Services - Smoked Glass Asymmetrical Bento Matrix */}
       <ServicesBento />
+
+      {/* 5.5 Emergency Service Section */}
+      <EmergencyService />
 
       {/* 6. Free Second Opinion Promo */}
       <SecondOpinionPromo />

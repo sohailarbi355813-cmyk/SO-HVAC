@@ -80,7 +80,7 @@ export default function InstallCamShowcase() {
           {/* AFTER LAYER (Full Base Canvas - Pristine Modern Install) */}
           <div className="absolute inset-0 w-full h-full p-8 sm:p-14 flex flex-col justify-end items-end text-right">
             {/* The After Image */}
-            <img src="/after-hvac.jpg" alt="New efficient HVAC system" className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
+            <img src="/emergency-1.jpg" alt="New efficient HVAC system" className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
 
             {/* Subtle shadow overlay to make the info card pop */}
             <div className="absolute inset-0 bg-black/10 pointer-events-none" />
