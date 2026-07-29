@@ -41,7 +41,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-8 mt-16 md:mt-0 md:text-right w-full md:w-auto border-t border-[#0033FF]/20 md:border-t-0 pt-8 md:pt-0">
+        <div className="flex flex-col mt-16 md:mt-0 md:text-right w-full md:w-auto border-t border-[#0033FF]/20 md:border-t-0 pt-8 md:pt-0">
           <motion.a 
             href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -52,14 +52,6 @@ export default function Hero() {
             <span className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center shrink-0">
               <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#DC2626] stroke-[3]" />
             </span>
-          </motion.a>
-          <motion.a 
-            href="#second-opinion"
-            whileHover={{ x: -15, color: "#0033FF" }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
-            className="text-xl md:text-3xl font-display uppercase font-medium tracking-tight flex items-center justify-start md:justify-end gap-4 text-[#0F0F0F]/40 hover:text-[#0F0F0F] transition-colors"
-          >
-            Audit Competitor Quote
           </motion.a>
         </div>
       </motion.div>
