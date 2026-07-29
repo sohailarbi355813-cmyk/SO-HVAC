@@ -48,29 +48,29 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative overflow-x-hidden bg-[#0B0E11] bg-obsidian text-white selection:bg-[#FF6B00] selection:text-white">
-      {/* ── $10k+ Studio Fixed Atmospheric Radial Gradients (Floating Glass Proof) ── */}
-      <div className="pointer-events-none fixed inset-0 z-[1] overflow-hidden">
-        {/* Massive Solar Amber / Orange Floating Orb (Top Left Anchor) */}
+    <main className="relative overflow-x-hidden bg-[#FAFAFA] text-[#0F0F0F] selection:bg-[#0033FF] selection:text-white">
+      {/* ── $10k+ Studio Fixed Atmospheric Radial Gradients (Light Mode Multiply) ── */}
+      <div className="pointer-events-none fixed inset-0 z-[1] overflow-hidden mix-blend-multiply opacity-30">
+        {/* Massive Cobalt Blue Floating Orb (Top Left Anchor) */}
         <div 
-          className="absolute -top-[15%] -left-[10%] w-[700px] sm:w-[950px] h-[700px] sm:h-[950px] rounded-full blur-[170px] sm:blur-[210px] pointer-events-none animate-pulse opacity-85"
+          className="absolute -top-[15%] -left-[10%] w-[700px] sm:w-[950px] h-[700px] sm:h-[950px] rounded-full blur-[170px] sm:blur-[210px] pointer-events-none animate-pulse"
           style={{
-            background: "radial-gradient(circle, rgba(232, 101, 10, 0.16) 0%, rgba(201, 85, 8, 0.08) 45%, transparent 75%)",
+            background: "radial-gradient(circle, rgba(0, 51, 255, 0.4) 0%, rgba(0, 51, 255, 0.15) 45%, transparent 75%)",
             animationDuration: "12s"
           }}
         />
-        {/* Deep Cobalt / Sapphire Blue Floating Orb (Mid Right Anchor) */}
+        {/* Deep Cyan / Ice Blue Floating Orb (Mid Right Anchor) */}
         <div 
-          className="absolute top-[35%] -right-[15%] w-[800px] sm:w-[1050px] h-[800px] sm:h-[1050px] rounded-full blur-[190px] sm:blur-[230px] pointer-events-none opacity-90"
+          className="absolute top-[35%] -right-[15%] w-[800px] sm:w-[1050px] h-[800px] sm:h-[1050px] rounded-full blur-[190px] sm:blur-[230px] pointer-events-none"
           style={{
-            background: "radial-gradient(circle, rgba(45, 125, 210, 0.18) 0%, rgba(29, 100, 178, 0.08) 50%, transparent 80%)"
+            background: "radial-gradient(circle, rgba(77, 112, 255, 0.3) 0%, rgba(77, 112, 255, 0.1) 50%, transparent 80%)"
           }}
         />
-        {/* Subtle Pale Jewel Accent Halo (Bottom Central Anchor) */}
+        {/* Subtle Accent Halo (Bottom Central Anchor) */}
         <div 
-          className="absolute bottom-[5%] left-[20%] w-[600px] sm:w-[850px] h-[600px] sm:h-[850px] rounded-full blur-[160px] sm:blur-[190px] pointer-events-none opacity-75 animate-pulse"
+          className="absolute bottom-[5%] left-[20%] w-[600px] sm:w-[850px] h-[600px] sm:h-[850px] rounded-full blur-[160px] sm:blur-[190px] pointer-events-none animate-pulse"
           style={{
-            background: "radial-gradient(circle, rgba(214, 234, 248, 0.12) 0%, rgba(214, 234, 248, 0.04) 50%, transparent 75%)",
+            background: "radial-gradient(circle, rgba(0, 51, 255, 0.25) 0%, rgba(0, 51, 255, 0.05) 50%, transparent 75%)",
             animationDuration: "16s"
           }}
         />

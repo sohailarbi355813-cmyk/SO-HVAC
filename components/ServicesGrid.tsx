@@ -98,7 +98,7 @@ export default function ServicesGrid() {
       />
 
       {/* Atmospheric Background Glows (Multi-Layer Depth) */}
-      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E8650A]/10 rounded-full blur-[140px] pointer-events-none animate-pulse" style={{ animationDuration: "8s" }} />
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#DC2626]/10 rounded-full blur-[140px] pointer-events-none animate-pulse" style={{ animationDuration: "8s" }} />
       <div className="absolute bottom-10 right-10 w-[600px] h-[600px] bg-[#2D7DD2]/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
@@ -111,7 +111,7 @@ export default function ServicesGrid() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16 space-y-3"
         >
-          <div className="text-[#E8650A] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
+          <div className="text-[#DC2626] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
             Our Services
           </div>
           <h2 
@@ -173,7 +173,7 @@ export default function ServicesGrid() {
                 />
 
                 <div className="relative z-10">
-                  <div className={`tile ${isDouble ? "w-16 h-16 mb-7" : "w-13 h-13 mb-5"} rounded-2xl bg-white/[0.04] border border-[#D6EAF8]/30 flex items-center justify-center text-[#D6EAF8] group-hover:bg-[#E8650A] group-hover:border-[#E8650A] group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(214,234,248,0.1)] group-hover:shadow-[0_0_35px_rgba(232,101,10,0.6)] group-hover:scale-110`}>
+                  <div className={`tile ${isDouble ? "w-16 h-16 mb-7" : "w-13 h-13 mb-5"} rounded-2xl bg-white/[0.04] border border-[#D6EAF8]/30 flex items-center justify-center text-[#D6EAF8] group-hover:bg-[#DC2626] group-hover:border-[#DC2626] group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(214,234,248,0.1)] group-hover:shadow-[0_0_35px_rgba(220, 38, 38,0.6)] group-hover:scale-110`}>
                     <IconComp className={`${isDouble ? "w-8 h-8" : "w-6 h-6"} stroke-[1.75] shrink-0 transition-transform duration-300 group-hover:rotate-6`} />
                   </div>
                   <h3 
@@ -188,7 +188,7 @@ export default function ServicesGrid() {
                 </div>
 
                 <div className="pt-4 border-t border-white/10 relative z-10">
-                  <span className="text-xs font-bold text-[#E8650A] group-hover:text-[#FF8A3D] uppercase tracking-wider inline-flex items-center gap-1.5 transition-colors">
+                  <span className="text-xs font-bold text-[#DC2626] group-hover:text-[#FF8A3D] uppercase tracking-wider inline-flex items-center gap-1.5 transition-colors">
                     <span>Learn more</span>
                     <span className="group-hover:translate-x-1 transition-transform duration-200">&rarr;</span>
                   </span>

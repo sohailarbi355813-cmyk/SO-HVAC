@@ -51,21 +51,21 @@
 }
 
 .dark {
-  --bg-page: #081423;
-  --bg-surface: #0E2238;
-  --bg-section-alt: #0B1A2C;
-  --bg-section-ice: #132B47;
+  --bg-page: #FAFAFA;
+  --bg-surface: #FFFFFF;
+  --bg-section-alt: #F1F5F9;
+  --bg-section-ice: #EAF4FB;
   
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-body: #CBD5E1;
+  --text-primary: #0F0F0F;
+  --text-secondary: #334155;
+  --text-body: #1A1A1A;
   --text-inverse: #FFFFFF;
   --text-inverse-muted: #D6EAF8;
   
-  --border-default: #1E3A5F;
-  --shadow-card: 0 4px 16px rgba(0,0,0,.35);
-  --shadow-elevated: 0 8px 32px rgba(0,0,0,.5);
-  --shadow-sticky: 0 -4px 20px rgba(0,0,0,.45);
+  --border-default: #E2E8F0;
+  --shadow-card: 0 4px 16px rgba(0,0,0,.05);
+  --shadow-elevated: 0 8px 32px rgba(0,0,0,.08);
+  --shadow-sticky: 0 -4px 20px rgba(0,0,0,.06);
 }
 
 /* Base resets & typography */
@@ -82,8 +82,8 @@ html {
 
 body {
   font-family: var(--font-inter), system-ui, sans-serif;
-  color: var(--text-body);
-  background-color: var(--bg-page);
+  color: #1A1A1A;
+  background-color: #FAFAFA;
   line-height: 1.6;
   overflow-x: hidden;
 }

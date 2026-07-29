@@ -14,21 +14,31 @@ const config: Config = {
         body:    ["var(--font-inter)", "system-ui", "sans-serif"],
         sans:    ["var(--font-inter)", "system-ui", "sans-serif"],
       },
+      fontSize: {
+        "fluid-sm": "clamp(0.875rem, 0.8vw + 0.6rem, 1rem)",
+        "fluid-base": "clamp(1rem, 1vw + 0.75rem, 1.125rem)",
+        "fluid-lg": "clamp(1.125rem, 1.5vw + 1rem, 1.5rem)",
+        "fluid-xl": "clamp(1.5rem, 2vw + 1.2rem, 2rem)",
+        "fluid-2xl": "clamp(2rem, 3vw + 1.5rem, 3rem)",
+        "fluid-3xl": "clamp(2.5rem, 4vw + 2rem, 4.5rem)",
+        "fluid-4xl": "clamp(3rem, 5vw + 2.5rem, 6rem)",
+        "fluid-hero": "clamp(3.5rem, 6vw + 3rem, 8rem)",
+      },
       colors: {
         /* ── $10k+ Award-Winning Luxury Studio Custom Colors ── */
-        "obsidian-slate": "#0B0E11",
-        "pale-jewel": "#D6EAF8",
+        "obsidian-slate": "#FAFAFA", // Repurposing as Swiss White background
+        "pale-jewel": "#0033FF", // Repurposing as Cobalt Blue accent
         obsidian: {
-          DEFAULT: "#0B0E11",
-          canvas: "#0B0E11",
-          card: "#151B24",
-          surface: "rgba(21, 27, 36, 0.85)",
+          DEFAULT: "#FAFAFA",
+          canvas: "#FAFAFA",
+          card: "#FFFFFF",
+          surface: "rgba(255, 255, 255, 0.85)",
         },
         jewel: {
-          DEFAULT: "#D6EAF8",
-          pale: "#D6EAF8",
-          ice: "#EAF4FB",
-          glow: "rgba(214, 234, 248, 0.45)",
+          DEFAULT: "#0033FF",
+          pale: "#4D70FF",
+          ice: "#E5EBFF",
+          glow: "rgba(0, 51, 255, 0.15)",
         },
         /* ── Figma Brand Tokens (01 Primitives & 02 Semantic) ── */
         navy: {
@@ -96,6 +106,10 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+      },
+      transitionTimingFunction: {
+        "spring-bouncy": "linear(0, 0.009, 0.035 2.1%, 0.141, 0.281 6.7%, 0.723 12.9%, 0.938 16.7%, 1.017, 1.077, 1.121, 1.149 24.3%, 1.159, 1.163, 1.161, 1.154 29.9%, 1.129 32.8%, 1.051 39.6%, 1.017 43.1%, 0.991, 0.977 51%, 0.974 53.8%, 0.975 57.1%, 0.997 69.8%, 1.003 76.9%, 1)",
+        "spring-smooth": "linear(0, 0.007, 0.029 2.2%, 0.118 4.7%, 0.625 14.4%, 0.826 19%, 0.902, 0.946, 0.972 27.8%, 0.986 30.1%, 0.995 33.3%, 1.001 37.5%, 1.002 43.1%, 1 54.3%, 1)",
       },
     },
   },

@@ -88,14 +88,14 @@ export default function StickyBottomBar() {
   return (
     <div
       suppressHydrationWarning
-      className={`sticky-bar fixed bottom-0 left-0 right-0 z-50 md:hidden p-4 px-5 flex gap-3.5 shadow-[0_-15px_45px_rgba(0,0,0,0.85)] transition-transform duration-300 select-none ${
+      className={`sticky-bar fixed bottom-0 left-0 right-0 z-50 md:hidden p-4 px-5 flex gap-3.5 shadow-[0_-15px_45px_rgba(0,0,0,0.1)] transition-transform duration-300 select-none ${
         visible ? "translate-y-0" : "translate-y-full"
       }`}
       style={{
-        backgroundColor: "rgba(11, 14, 17, 0.65)",
+        backgroundColor: "rgba(255, 255, 255, 0.85)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        borderTop: "1px solid rgba(255, 255, 255, 0.1)"
+        borderTop: "1px solid rgba(0, 0, 0, 0.1)"
       }}
     >
       <a
@@ -106,19 +106,12 @@ export default function StickyBottomBar() {
       </a>
       <a
         ref={quoteBtnRef}
-        href="#quote"
-        onClick={(e) => {
-          const el = document.getElementById("quote");
-          if (el) {
-            e.preventDefault();
-            el.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
+        href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
         style={{
           transition: "transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, background-color 0.2s ease",
           willChange: "transform, box-shadow"
         }}
-        className="flex-[1.25] py-3.5 px-5 rounded-2xl bg-[#D6EAF8] hover:bg-[#BAE2FD] text-[#060B14] font-extrabold text-center flex items-center justify-center gap-2 shadow-[0_6px_25px_rgba(214,234,248,0.35)] active:scale-95 text-sm tracking-wide cursor-pointer"
+        className="flex-[1.25] py-3.5 px-5 rounded-2xl bg-[#DC2626] hover:bg-[#B91C1C] text-white font-extrabold text-center flex items-center justify-center gap-2 shadow-[0_6px_25px_rgba(220,38,38,0.35)] active:scale-95 text-sm tracking-wide cursor-pointer"
       >
         <span>Get a Free Quote</span>
       </a>

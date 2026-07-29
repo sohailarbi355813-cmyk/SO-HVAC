@@ -50,7 +50,7 @@ export default function HeroSection() {
       suppressHydrationWarning 
       className="hero relative w-full bg-[#0B0E11] text-white pt-16 sm:pt-24 pb-28 border-b border-white/10 select-none z-30 overflow-hidden group/section"
       style={{
-        backgroundImage: "radial-gradient(circle at 90% 10%, rgba(32, 92, 164, 0.22) 0%, rgba(232, 101, 10, 0.08) 35%, rgba(11, 14, 17, 0) 70%)"
+        backgroundImage: "radial-gradient(circle at 90% 10%, rgba(32, 92, 164, 0.22) 0%, rgba(220, 38, 38, 0.08) 35%, rgba(11, 14, 17, 0) 70%)"
       }}
     >
       {/* JavaScript-Driven Pale Jewel Cursor Tracking Canvas Spotlight */}
@@ -69,7 +69,7 @@ export default function HeroSection() {
           
           {/* HERO CONTENT AREA (Left 7 Columns) */}
           <div className="lg:col-span-7 space-y-8 text-left">
-            <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#E8650A] tracking-wider uppercase font-mono">
+            <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#DC2626] tracking-wider uppercase font-mono">
               <span>The GTA&apos;s Trusted Second Opinion</span>
             </div>
 
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 14 }}
                 className="chip-ice inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#D6EAF8] cursor-default select-none"
               >
-                <Check className="w-4 h-4 text-[#E8650A] shrink-0 drop-shadow-[0_0_8px_rgba(232,101,10,0.6)]" />
+                <Check className="w-4 h-4 text-[#DC2626] shrink-0 drop-shadow-[0_0_8px_rgba(220, 38, 38,0.6)]" />
                 <span>Licensed &amp; Insured</span>
               </motion.span>
               <motion.span 
@@ -99,7 +99,7 @@ export default function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 14 }}
                 className="chip-ice inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#D6EAF8] cursor-default select-none"
               >
-                <Check className="w-4 h-4 text-[#E8650A] shrink-0 drop-shadow-[0_0_8px_rgba(232,101,10,0.6)]" />
+                <Check className="w-4 h-4 text-[#DC2626] shrink-0 drop-shadow-[0_0_8px_rgba(220, 38, 38,0.6)]" />
                 <span>InstallCam™ Documented</span>
               </motion.span>
               <motion.span 
@@ -107,7 +107,7 @@ export default function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 14 }}
                 className="chip-ice inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#D6EAF8] cursor-default select-none"
               >
-                <Check className="w-4 h-4 text-[#E8650A] shrink-0 drop-shadow-[0_0_8px_rgba(232,101,10,0.6)]" />
+                <Check className="w-4 h-4 text-[#DC2626] shrink-0 drop-shadow-[0_0_8px_rgba(220, 38, 38,0.6)]" />
                 <span>SO Certified™ Techs</span>
               </motion.span>
             </div>
@@ -123,7 +123,7 @@ export default function HeroSection() {
                     el.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="px-8 py-4 rounded-2xl bg-[#E8650A] hover:bg-[#C95508] text-white font-extrabold text-base text-center justify-center flex items-center gap-2 shadow-[0_10px_35px_rgba(232,101,10,0.4)] transition-all hover:scale-[1.02]"
+                className="px-8 py-4 rounded-2xl bg-[#DC2626] hover:bg-[#C95508] text-white font-extrabold text-base text-center justify-center flex items-center gap-2 shadow-[0_10px_35px_rgba(220, 38, 38,0.4)] transition-all hover:scale-[1.02]"
               >
                 <span>Get My Free Quote</span>
                 <ArrowRight className="w-5 h-5" />
@@ -230,7 +230,7 @@ export default function HeroSection() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="text-xs text-[#E8650A] hover:text-[#FF8A3D] underline uppercase tracking-wider font-mono font-bold mt-2 inline-block transition-colors"
+                  className="text-xs text-[#DC2626] hover:text-[#FF8A3D] underline uppercase tracking-wider font-mono font-bold mt-2 inline-block transition-colors"
                 >
                   Submit another inquiry
                 </button>
@@ -359,13 +359,13 @@ export default function HeroSection() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 350, damping: 15 }}
-                  className="w-full py-4 rounded-xl bg-[#E8650A] hover:bg-[#FF7A1A] text-white font-extrabold text-base uppercase tracking-wider shadow-[0_12px_35px_rgba(232,101,10,0.35)] hover:shadow-[0_18px_45px_rgba(232,101,10,0.55)] flex items-center justify-center gap-2 mt-4 transition-colors"
+                  className="w-full py-4 rounded-xl bg-[#DC2626] hover:bg-[#EF4444] text-white font-extrabold text-base uppercase tracking-wider shadow-[0_12px_35px_rgba(220, 38, 38,0.35)] hover:shadow-[0_18px_45px_rgba(220, 38, 38,0.55)] flex items-center justify-center gap-2 mt-4 transition-colors"
                 >
                   <span>Request My Free Quote</span>
                 </motion.button>
 
                 <p className="text-[11px] text-white/50 text-center flex items-center justify-center gap-1.5 pt-1 font-light">
-                  <Lock className="w-3.5 h-3.5 text-[#E8650A] shrink-0" />
+                  <Lock className="w-3.5 h-3.5 text-[#DC2626] shrink-0" />
                   <span>Your info is never sold. By submitting, you agree to be contacted about your request.</span>
                 </p>
               </form>

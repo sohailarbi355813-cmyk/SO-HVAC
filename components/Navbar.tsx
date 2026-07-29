@@ -45,10 +45,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`sticky top-0 sm:top-[38px] left-0 right-0 z-[105] transition-all duration-300 ${
-          scrolled || menuOpen
-            ? "bg-white/95 dark:bg-[#0B0E11]/95 backdrop-blur-xl border-b border-white/10 shadow-xl"
-            : "bg-white dark:bg-[#0B0E11] border-b border-white/10"
+        className={`sticky top-0 w-full z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-[#FAFAFA]/95 backdrop-blur-xl border-b border-[#0F0F0F]/10 shadow-xl"
+            : "bg-[#FAFAFA] border-b border-[#0F0F0F]/10"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-[76px]">
@@ -81,7 +81,7 @@ export default function Navbar() {
                     el.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="text-[var(--text-body)] hover:text-[#E8650A] dark:text-white/80 dark:hover:text-[#D6EAF8] font-body font-semibold text-sm transition-colors duration-200 relative py-1"
+                className="text-[var(--text-body)] hover:text-[#DC2626] dark:text-white/80 dark:hover:text-[#D6EAF8] font-body font-semibold text-sm transition-colors duration-200 relative py-1"
               >
                 {link.label}
               </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
               href="tel:9055550142"
               title="Call SO HVAC Now"
               aria-label="Call SO HVAC Now"
-              className="w-10 h-10 rounded-full bg-[#FDEBDC] dark:bg-white/[0.05] dark:border dark:border-[#D6EAF8]/30 flex items-center justify-center text-[#E8650A] dark:text-[#D6EAF8] hover:bg-[#E8650A] hover:text-white dark:hover:bg-[#D6EAF8] dark:hover:text-[#0B0E11] transition-all shadow-sm active:scale-95"
+              className="w-10 h-10 rounded-full bg-[#FEE2E2] dark:bg-white/[0.05] dark:border dark:border-[#D6EAF8]/30 flex items-center justify-center text-[#DC2626] dark:text-[#D6EAF8] hover:bg-[#DC2626] hover:text-white dark:hover:bg-[#D6EAF8] dark:hover:text-[#0B0E11] transition-all shadow-sm active:scale-95"
             >
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z" />
@@ -102,7 +102,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#quote"
+              href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
               onClick={(e) => {
                 const el = document.getElementById("quote");
                 if (el) {
@@ -110,7 +110,7 @@ export default function Navbar() {
                   el.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="hidden sm:inline-flex px-6 py-2.5 rounded-full bg-[#E8650A] hover:bg-[#FF7A1A] text-white font-extrabold text-sm shadow-[0_4px_18px_rgba(232,101,10,0.45)] transition-all hover:scale-105 active:scale-95"
+              className="hidden sm:inline-flex px-6 py-2.5 rounded-full bg-[#DC2626] hover:bg-[#EF4444] text-white font-extrabold text-sm shadow-[0_4px_18px_rgba(220, 38, 38,0.45)] transition-all hover:scale-105 active:scale-95"
             >
               Get Free Quote
             </a>
@@ -182,7 +182,7 @@ export default function Navbar() {
                   transitionDelay: `${(navLinks.length + 1) * 50}ms`,
                 }}
                 onClick={() => setMenuOpen(false)}
-                className="overlay-link w-full max-w-[280px] py-4 px-8 rounded-2xl bg-[#E8650A] hover:bg-[#FF7A1A] text-white font-extrabold text-lg text-center justify-center flex items-center gap-2 shadow-[0_12px_38px_rgba(232,101,10,0.55)] transition-all hover:scale-105 mt-4"
+                className="overlay-link w-full max-w-[280px] py-4 px-8 rounded-2xl bg-[#DC2626] hover:bg-[#EF4444] text-white font-extrabold text-lg text-center justify-center flex items-center gap-2 shadow-[0_12px_38px_rgba(220, 38, 38,0.55)] transition-all hover:scale-105 mt-4"
               >
                 <span>Get My Free Quote</span>
               </a>

@@ -38,26 +38,26 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faq" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#0B0E11] text-white border-b border-white/10 select-none overflow-hidden">
+    <section id="faq" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#FAFAFA] text-[#0F0F0F] border-b border-[#0F0F0F]/10 select-none overflow-hidden">
       {/* Subtle background glow */}
-      <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E8650A]/[0.05] rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#2D7DD2]/[0.06] rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#0033FF]/[0.05] rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#4D70FF]/[0.06] rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 sm:px-12 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 text-[#E8650A] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
-            <HelpCircle className="w-4 h-4 text-[#E8650A]" />
+          <div className="inline-flex items-center gap-2 text-[#0033FF] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
+            <HelpCircle className="w-4 h-4 text-[#0033FF]" />
             <span>Common Questions</span>
           </div>
           <h2 
             style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
-            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
+            className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0F0F0F]"
           >
             Answers Before You Ask
           </h2>
-          <p className="text-sm sm:text-base text-white/65 leading-relaxed font-light">
+          <p className="text-sm sm:text-base text-[#1A1A1A]/70 leading-relaxed font-light">
             Marked up with FAQPage structural schema for rich engineering transparency.
           </p>
         </div>
@@ -71,8 +71,8 @@ export default function FaqSection() {
                 key={idx}
                 className={`faq-item rounded-[28px] transition-all duration-300 border backdrop-blur-xl overflow-hidden group ${
                   isOpen
-                    ? "bg-white/[0.06] border-[#E8650A]/55 shadow-[0_20px_65px_rgba(0,0,0,0.65)]"
-                    : "bg-white/[0.03] hover:bg-white/[0.06] border-white/10 shadow-[0_10px_35px_rgba(0,0,0,0.4)]"
+                    ? "bg-white border-[#0033FF]/40 shadow-[0_20px_65px_rgba(0,0,0,0.08)]"
+                    : "bg-white hover:bg-[#F1F5F9] border-[#0F0F0F]/10 shadow-sm"
                 }`}
               >
                 {/* Interactive Question Trigger (.summary) */}
@@ -83,17 +83,17 @@ export default function FaqSection() {
                 >
                   <span 
                     style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
-                    className="text-lg sm:text-xl font-bold text-white tracking-wide leading-snug group-hover:text-[#D6EAF8] transition-colors duration-200"
+                    className="text-lg sm:text-xl font-bold text-[#0F0F0F] tracking-wide leading-snug group-hover:text-[#0033FF] transition-colors duration-200"
                   >
                     {faq.q}
                   </span>
 
                   {/* 180-Degree Rotating SVG Icon Container */}
                   <div 
-                    className={`w-10 h-10 rounded-full bg-white/[0.05] border border-white/15 flex items-center justify-center shrink-0 text-[#E8650A] transition-all duration-500 ease-[cubic-bezier(0.34,1.45,0.64,1)] ${
+                    className={`w-10 h-10 rounded-full border flex items-center justify-center shrink-0 transition-all duration-500 ease-[cubic-bezier(0.34,1.45,0.64,1)] ${
                       isOpen 
-                        ? "rotate-180 bg-[#E8650A] text-white border-[#E8650A] shadow-[0_0_20px_rgba(232,101,10,0.65)] scale-105" 
-                        : "group-hover:border-white/35 group-hover:scale-105"
+                        ? "rotate-180 bg-[#0033FF] text-white border-[#0033FF] shadow-[0_0_15px_rgba(0,51,255,0.4)] scale-105" 
+                        : "bg-[#FAFAFA] border-[#0F0F0F]/15 text-[#0033FF] group-hover:border-[#0033FF]/40 group-hover:scale-105"
                     }`}
                   >
                     <ChevronDown className="w-5 h-5 stroke-[2.5] transition-transform duration-500" />
@@ -109,7 +109,7 @@ export default function FaqSection() {
                   }}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 sm:px-8 pb-7 pt-3 text-sm sm:text-base text-white/80 font-light leading-relaxed border-t border-white/[0.08] bg-black/10">
+                    <div className="px-6 sm:px-8 pb-7 pt-3 text-sm sm:text-base text-[#1A1A1A]/80 font-light leading-relaxed border-t border-[#0F0F0F]/5 bg-[#FAFAFA]/50">
                       {faq.a}
                     </div>
                   </div>

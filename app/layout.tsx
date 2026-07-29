@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import LenisScrollProvider from "@/components/LenisScrollProvider";
 import IntersectionObserverScript from "@/components/IntersectionObserverScript";
 
-// $10k Award-Winning Typography Hierarchy: Precision Engineering (Space Grotesk + Inter)
-const spaceGrotesk = Space_Grotesk({
+// $10k Award-Winning Typography Hierarchy: Precision Engineering (Playfair Display + Manrope)
+const stylish = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-space",
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-space", // Keeping same variable name so we don't have to rewrite everything
   display: "swap",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-inter",
+  variable: "--font-inter", // Keeping same variable name
   display: "swap",
 });
 
@@ -41,9 +42,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${stylish.variable} ${manrope.variable}`}>
       <body
-        className="bg-[#050B14] text-white font-sans antialiased selection:bg-[#FF6B00] selection:text-white"
+        className="bg-[#FAFAFA] text-[#0F0F0F] font-sans antialiased selection:bg-[#0033FF] selection:text-[#FAFAFA]"
         style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
         suppressHydrationWarning
       >

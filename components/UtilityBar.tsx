@@ -7,8 +7,8 @@ export default function UtilityBar() {
   return (
     <div className="bg-[#0B1E33] text-white py-2.5 px-6 sm:px-12 border-b border-white/10 text-xs sm:text-sm font-medium z-[110] relative select-none">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2 text-[#E8650A] font-extrabold tracking-wider">
-          <Zap className="w-4 h-4 fill-current text-[#E8650A]" />
+        <div className="flex items-center gap-2 text-[#DC2626] font-extrabold tracking-wider">
+          <Zap className="w-4 h-4 fill-current text-[#DC2626]" />
           <span>24/7 Emergency</span>
         </div>
 
