@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import UtilityBar from "@/components/UtilityBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustMarquee from "@/components/TrustMarquee";
