@@ -12,7 +12,7 @@ const SIGNALS = [
 
 export default function TrustMarquee() {
   return (
-    <section suppressHydrationWarning className="relative bg-[#DC2626] border-b border-[#0F0F0F]/10 py-8 lg:py-12 select-none z-10">
+    <section suppressHydrationWarning className="relative bg-[#0033FF] border-b border-[#0F0F0F]/10 py-8 lg:py-12 select-none z-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-center justify-between">
           {SIGNALS.map((item, idx) => {
