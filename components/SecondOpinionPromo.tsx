@@ -23,7 +23,7 @@ export default function SecondOpinionPromo() {
             <div className="lg:col-span-5">
               <div className="h-64 sm:h-72 rounded-2xl border border-[#0F0F0F]/10 relative overflow-hidden shadow-inner group">
                 <img 
-                  src="/engineer-dusting.avif" 
+                  src="/ac-cleaning.jpg" 
                   alt="Technician reviewing quote" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

@@ -44,7 +44,7 @@ export default function EmergencyService() {
         {/* Right Side: Image */}
         <div className="w-full md:w-1/2 min-h-[400px] md:min-h-full relative overflow-hidden">
           <img 
-            src="/emergency-2.jpg" 
+            src="/expert-hvac.jpg" 
             alt="Emergency HVAC technicians" 
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
