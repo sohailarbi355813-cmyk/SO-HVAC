@@ -100,7 +100,7 @@ export default function StickyBottomBar() {
     >
       <a
         href="tel:9055550142"
-        className="flex-1 py-3.5 px-4 rounded-2xl bg-white/[0.04] hover:bg-white/[0.09] border border-[#D6EAF8]/40 text-white font-extrabold text-center flex items-center justify-center gap-2 active:scale-95 transition-all text-sm tracking-wide shadow-sm"
+        className="flex-1 py-3.5 px-4 rounded-2xl bg-[#DC2626] hover:bg-[#B91C1C] text-white font-extrabold text-center flex items-center justify-center gap-2 active:scale-95 transition-all text-sm tracking-wide shadow-[0_6px_25px_rgba(220,38,38,0.35)]"
       >
         <span>Call Now</span>
       </a>
