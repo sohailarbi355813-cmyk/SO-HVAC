@@ -35,7 +35,8 @@ export default function EmergencyService() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             whileHover={{ scale: 1.05 }}
-            className="inline-flex items-center justify-center bg-[#F97316] text-white px-10 py-4 rounded-xl font-extrabold text-lg md:text-xl hover:bg-[#EA580C] transition-colors shadow-lg shadow-[#F97316]/20 self-start"
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center justify-center bg-[#D92626] text-white px-10 py-4 rounded-xl font-extrabold text-lg md:text-xl hover:bg-[#B31E1E] transition-colors shadow-lg shadow-[#D92626]/20 self-start"
           >
             Call us Now
           </motion.a>
@@ -46,7 +47,7 @@ export default function EmergencyService() {
           <img 
             src="/expert-hvac.jpg" 
             alt="Emergency HVAC technicians" 
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-top"
           />
         </div>
 

@@ -31,7 +31,7 @@ export default function HowItWorks() {
     <section id="process" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#FAFAFA] text-[#0F0F0F] border-b border-[#0F0F0F]/10 select-none overflow-hidden">
       {/* HVAC Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-center bg-fixed opacity-30 pointer-events-none"
+        className="absolute inset-0 z-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-top bg-fixed opacity-30 pointer-events-none"
       />
       <div className="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
         
