@@ -27,19 +27,6 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat"
       />
 
-      {/* Massive Stylish Typography Bleed - Light Mode */}
-      <motion.div 
-        style={{ y: y1, scale, rotate }}
-        className="absolute w-full flex flex-col items-center justify-center pointer-events-none z-0 mix-blend-multiply opacity-5"
-      >
-        <h1 className="text-[18vw] leading-[0.75] font-display font-bold tracking-tighter whitespace-nowrap text-[#0033FF]">
-          Atmosphere
-        </h1>
-        <h1 className="text-[18vw] leading-[0.75] font-display font-bold italic tracking-tighter whitespace-nowrap ml-32">
-          Engineered
-        </h1>
-      </motion.div>
-
       {/* Sharp, asymmetrical content block */}
       <motion.div 
         style={{ y: y2 }}
