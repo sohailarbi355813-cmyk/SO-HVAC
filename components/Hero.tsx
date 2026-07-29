@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[70vh] py-16 lg:py-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-center justify-center selection:bg-[#0033FF] selection:text-white"
+      className="relative w-full min-h-[60vh] pt-16 pb-12 lg:pt-24 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
     >
       {/* Massive Stylish Typography Bleed - Light Mode */}
       <motion.div 
@@ -38,7 +38,7 @@ export default function Hero() {
       {/* Sharp, asymmetrical content block */}
       <motion.div 
         style={{ y: y2 }}
-        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-12 border-t-2 border-b-2 border-[#0033FF]/20 py-16"
+        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-4 md:mt-8 border-t-2 border-b-2 border-[#0033FF]/20 py-10 md:py-16"
       >
         <div className="max-w-3xl">
           <p className="font-mono text-[#0033FF] uppercase tracking-[0.4em] text-xs mb-8 font-bold">
