@@ -3,7 +3,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import Swoosh from "@/components/Swoosh";
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -24,7 +23,7 @@ export default function Hero() {
     >
       {/* Background Image Layer */}
       <div 
-        className="absolute inset-0 z-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-[url('/hero-bg-mobile.png')] md:bg-[url('/hero-bg.png')] bg-cover bg-center md:bg-top bg-no-repeat"
       />
 
       {/* Sharp, asymmetrical content block */}
@@ -33,8 +32,8 @@ export default function Hero() {
         className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-2 border-t-2 border-b-2 border-[#0033FF]/20 py-8 md:py-12"
       >
         <div className="max-w-3xl">
-          <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter leading-[0.9] mb-8 text-[#0F0F0F]">
-            Honest <span className="relative inline-block italic text-[#0033FF] pr-2">Climate<Swoosh color="#0033FF" className="opacity-80 translate-y-2 md:translate-y-4" /></span><br/> Control
+          <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-sans font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
+            Smart <span className="relative inline-block italic font-display text-[#3B82F6]">HVAC</span><br /> Solutions for Modern Homes
           </h2>
         </div>
 
