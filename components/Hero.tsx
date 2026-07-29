@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative w-full min-h-[50vh] pt-6 pb-12 lg:pt-12 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
+      className="relative w-full min-h-[50vh] pt-28 pb-12 lg:pt-36 lg:pb-20 bg-[#FAFAFA] text-[#0F0F0F] overflow-hidden flex items-start justify-center selection:bg-[#0033FF] selection:text-white"
     >
       {/* Background Image Layer */}
       <div 
@@ -29,7 +29,7 @@ export default function Hero() {
       {/* Sharp, asymmetrical content block */}
       <motion.div 
         style={{ y: y2 }}
-        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-2 border-t-2 border-b-2 border-[#0033FF]/20 py-8 md:py-12"
+        className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-2 py-8 md:py-12"
       >
         <div className="max-w-3xl">
           <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-sans font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
@@ -37,7 +37,7 @@ export default function Hero() {
           </h2>
         </div>
 
-        <div className="flex flex-col mt-16 md:mt-0 md:text-right w-full md:w-auto border-t border-[#0033FF]/20 md:border-t-0 pt-8 md:pt-0">
+        <div className="flex flex-col mt-16 md:mt-0 md:text-right w-full md:w-auto pt-8 md:pt-0">
           <motion.a 
             href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
