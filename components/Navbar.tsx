@@ -149,6 +149,16 @@ export default function Navbar() {
             }}
             id="mobile-menu"
           >
+            {/* Close Button Inside Overlay */}
+            <button 
+              onClick={toggleMenu}
+              className="absolute top-4 right-4 sm:right-8 w-11 h-11 rounded-xl flex items-center justify-center border border-white/15 bg-white/[0.05] text-[#D6EAF8] hover:bg-white/[0.12] hover:border-[#D6EAF8]/80 active:scale-90 transition-all shadow-md z-[110]"
+              aria-label="Close mobile navigation"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
             {/* Overlay Kinetic Links Cascade */}
             <div className="flex flex-col items-center justify-center flex-1 gap-6 px-6 py-8 my-auto">
               {navLinks.map((link, i) => (
