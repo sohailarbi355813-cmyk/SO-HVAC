@@ -29,9 +29,12 @@ const STEPS = [
 export default function HowItWorks() {
   return (
     <section id="process" suppressHydrationWarning className="relative py-24 sm:py-32 bg-[#FAFAFA] text-[#0F0F0F] border-b border-[#0F0F0F]/10 select-none overflow-hidden">
-      {/* Ambient background accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0033FF]/[0.03] to-transparent pointer-events-none" />
-
+      {/* HVAC Background Image */}
+      <div 
+        className="absolute inset-0 bg-[url('/expert-hvac.jpg')] bg-cover bg-center bg-fixed opacity-15 mix-blend-luminosity pointer-events-none"
+      />
+      {/* Ambient background accent overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA] via-[#FAFAFA]/70 to-[#FAFAFA] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 sm:px-12 relative z-10">
         
         {/* Section Header */}
