@@ -36,9 +36,6 @@ export default function Hero() {
           <h2 className="text-5xl md:text-8xl font-display font-bold tracking-tighter leading-[0.9] mb-8 text-[#0F0F0F]">
             Honest <span className="relative inline-block italic text-[#0033FF] pr-2">Climate<Swoosh color="#0033FF" className="opacity-80 translate-y-2 md:translate-y-4" /></span><br/> Control
           </h2>
-          <p className="font-sans text-xl font-medium text-[#1A1A1A]/70 max-w-xl leading-relaxed">
-            We tore down the standard commission model. You consult straight with SO Certified™ installation technicians. Zero pressure. Total transparency.
-          </p>
         </div>
 
         <div className="flex flex-col mt-16 md:mt-0 md:text-right w-full md:w-auto border-t border-[#0033FF]/20 md:border-t-0 pt-8 md:pt-0">
