@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calculator } from "lucide-react";
 
 export default function FinancingSection() {
-  const [cost, setCost] = useState(5340);
+  const [cost, setCost] = useState(8000);
   
   // Real-time monthly payment calculation over 60 months
   const monthlyPayment = Math.round(cost / 60);
   
-  // Track fill calculation (Range: $2,500 to $15,000)
-  const percentage = ((cost - 2500) / (15000 - 2500)) * 100;
+  // Track fill calculation (Range: $3,000 to $15,000)
+  const percentage = ((cost - 3000) / (15000 - 3000)) * 100;
 
   return (
     <section id="financing" suppressHydrationWarning className="fin relative py-24 sm:py-32 bg-[#F1F5F9] text-[#0F0F0F] border-b border-[#0F0F0F]/10 select-none overflow-hidden">
@@ -111,9 +111,9 @@ export default function FinancingSection() {
               <div className="relative pt-6 border-t border-[#0F0F0F]/10 space-y-4">
                 <input
                   type="range"
-                  min="2500"
+                  min="3000"
                   max="15000"
-                  step="50"
+                  step="250"
                   value={cost}
                   onChange={(e) => setCost(Number(e.target.value))}
                   style={{
@@ -124,8 +124,8 @@ export default function FinancingSection() {
                 
                 {/* Slider Scale Labels */}
                 <div className="flex justify-between items-center text-xs font-mono text-[#1A1A1A]/60 font-bold tracking-wider">
-                  <span>$2,500 (BASIC ZONE)</span>
-                  <span>$15,000 (CRYO INVERTER)</span>
+                  <span>$3,000</span>
+                  <span>$15,000</span>
                 </div>
               </div>
 
