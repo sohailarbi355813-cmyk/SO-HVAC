@@ -109,7 +109,7 @@ export default function ServicesBento() {
               {/* Massive Title */}
               <div className="flex items-center gap-8 md:gap-16 z-10">
                 <span className="font-mono text-[#0F0F0F] text-lg md:text-2xl font-bold opacity-30 group-hover:opacity-80 transition-opacity">
-                  {svc.id}
+                  {String(idx + 1).padStart(2, "0")}
                 </span>
                 <h3 className="text-4xl md:text-7xl font-display font-bold uppercase tracking-tighter text-[#0F0F0F] group-hover:text-[#0033FF] transition-colors duration-500 origin-left group-hover:scale-[1.03] transform">
                   {svc.title}
