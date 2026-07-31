@@ -2,33 +2,63 @@
 
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { Snowflake, Flame, Thermometer, Droplet, Waves, Wrench, Activity, SearchCheck, Zap } from "lucide-react";
 
 const SERVICES = [
   {
-    id: "01",
+    icon: Snowflake,
     title: "Air Conditioners",
-    desc: "Right-sized AC installs with transparent pricing and InstallCam™ documentation of every step.",
+    desc: "Right-sized cooling solutions with clear pricing and practical advice for GTA homes.",
+    spanClass: "md:col-span-2",
   },
   {
-    id: "02",
+    icon: Flame,
     title: "Furnaces",
-    desc: "High-efficiency furnace replacement, sized properly for your home — never upsold. Built for harsh cold winters.",
+    desc: "High-efficiency furnace replacement focused on proper sizing and long-term reliability. No upselling, no unnecessary add-ons.",
+    spanClass: "md:col-span-1 md:row-span-2 sm:min-h-[340px]",
   },
   {
-    id: "03",
+    icon: Thermometer,
     title: "Heat Pumps",
-    desc: "Cold-climate heat pumps with rebate guidance. We'll tell you honestly if one fits your home.",
+    desc: "Cold-climate heat pump options explained honestly, including where they do and do not fit.",
+    spanClass: "md:col-span-1",
   },
   {
-    id: "04",
-    title: "Tankless",
-    desc: "Endless hot water and space savings, installed by SO Certified™ technicians.",
+    icon: Droplet,
+    title: "Tankless Water Heaters",
+    desc: "Space-saving hot water systems installed with proper venting, setup, and homeowner guidance.",
+    spanClass: "md:col-span-1",
   },
   {
-    id: "05",
+    icon: Waves,
+    title: "Water Heaters",
+    desc: "Tank replacements done same-week — with clear equipment and labour pricing.",
+    spanClass: "md:col-span-1",
+  },
+  {
+    icon: Wrench,
+    title: "Repairs",
+    desc: "Fast diagnosis and honest repair-vs-replace advice. We fix what can be fixed.",
+    spanClass: "md:col-span-1",
+  },
+  {
+    icon: Activity,
+    title: "Maintenance",
+    desc: "Seasonal tune-ups that protect your warranty and prevent mid-winter breakdowns.",
+    spanClass: "md:col-span-1",
+  },
+  {
+    icon: SearchCheck,
     title: "Second Opinions",
-    desc: "Got a big quote? We'll review it free — and tell you if it's fair or overpriced.",
-  }
+    desc: "Bring us an existing quote. We'll help you understand the equipment, pricing, and options.",
+    spanClass: "md:col-span-1",
+  },
+  {
+    icon: Zap,
+    title: "Emergency Service",
+    desc: "No heat? No cooling? 24/7 response across the GTA, with upfront pricing before we start.",
+    spanClass: "md:col-span-2",
+  },
 ];
 
 export default function ServicesBento() {

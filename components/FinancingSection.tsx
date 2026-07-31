@@ -33,33 +33,33 @@ export default function FinancingSection() {
           >
             <div className="inline-flex items-center gap-2 text-[#0033FF] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
               <Calculator className="w-4 h-4 text-[#0033FF]" />
-              <span>Flexible Financing &amp; Calculator</span>
+              <span>Payment Planning</span>
             </div>
 
             <h2 
               style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0F0F0F] tracking-tight leading-tight"
             >
-              Comfort Now. Easy Monthly Payments.
+              Understand the monthly cost before you commit.
             </h2>
 
             <p className="text-base sm:text-xl text-[#1A1A1A]/80 leading-relaxed font-light">
-              Simple pre-authorized payment plans arranged directly with us &mdash; no third-party dealer fees inflating your price. Use our dynamic calculator to estimate your exact monthly investment in real-time.
+              This calculator is a planning tool only. Final payment options depend on the approved financing structure and written agreement available at the time of purchase.
             </p>
+
+            <div className="flex flex-col gap-3 pt-2">
+              <div className="flex items-center gap-2 font-bold text-sm text-[#0F0F0F]">✓ Clear installed system price</div>
+              <div className="flex items-center gap-2 font-bold text-sm text-[#0F0F0F]">✓ Monthly estimate shown upfront</div>
+              <div className="flex items-center gap-2 font-bold text-sm text-[#0F0F0F]">✓ Terms explained before approval</div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
                 className="px-8 py-4 rounded-2xl bg-[#DC2626] hover:bg-[#B91C1C] font-extrabold text-base text-white shadow-[0_10px_35px_rgba(220,38,38,0.4)] hover:scale-[1.02] transition-all inline-flex items-center justify-center gap-2"
               >
-                <span>Lock In Your Price</span>
+                <span>Ask About Payment Options</span>
                 <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
-                className="px-8 py-4 rounded-2xl bg-white hover:bg-white/90 border border-[#0F0F0F]/20 hover:border-[#DC2626]/50 font-extrabold text-base text-[#DC2626] shadow-[0_5px_15px_rgba(0,0,0,0.05)] transition-all inline-flex items-center justify-center"
-              >
-                See Available Rebates
               </a>
             </div>
           </motion.div>
@@ -132,7 +132,7 @@ export default function FinancingSection() {
               {/* Fine Print Assurances */}
               <div className="pt-4">
                 <p className="text-xs text-[#1A1A1A]/60 leading-relaxed font-light">
-                  <strong className="text-[#0033FF]">Zero down &middot; No hidden dealer fees</strong> &middot; Pre-authorized payment plans arranged directly with SO HVAC mechanical engineers.
+                  Illustrative estimate based on 60 equal monthly payments with no interest. This is not a financing offer, approval, or final payment schedule.
                 </p>
               </div>
 

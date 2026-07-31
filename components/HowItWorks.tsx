@@ -6,23 +6,23 @@ import { motion } from "framer-motion";
 const STEPS = [
   {
     num: "1",
-    title: "Free In-Home Assessment",
-    desc: "We measure your home properly, inspect your current system, and listen to what you actually need.",
+    title: "Initial Conversation",
+    desc: "We understand the problem, the home, and what you have already been told.",
   },
   {
     num: "2",
-    title: "Transparent Quote",
-    desc: "Equipment cost, labour, and options — itemized in writing. Compare us to anyone.",
+    title: "Assessment",
+    desc: "We review the existing system and identify the practical options available.",
   },
   {
     num: "3",
-    title: "Premium Installation",
-    desc: "SO Certified™ technicians install to manufacturer spec, with InstallCam™ photos of every stage.",
+    title: "Transparent Quote",
+    desc: "You receive a clear recommendation with pricing and alternatives explained.",
   },
   {
     num: "4",
-    title: "Follow-Up & Warranty",
-    desc: "We register your warranty, walk you through your system, and check in after 30 days.",
+    title: "Professional Installation",
+    desc: "The agreed system is installed, tested, and explained before completion.",
   },
 ];
 
@@ -50,10 +50,10 @@ export default function HowItWorks() {
             style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0F0F0F]"
           >
-            From First Call to Final Photo
+            A simple process designed to reduce uncertainty.
           </h2>
           <p className="text-sm sm:text-base text-[#1A1A1A]/80 leading-relaxed font-light">
-            No surprises, no pressure. Here&apos;s exactly what working with SO HVAC looks like.
+            No confusing sales process. No hidden steps. Just clear communication from first conversation to final walkthrough.
           </p>
         </motion.div>
 

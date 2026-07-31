@@ -5,28 +5,28 @@ import { ChevronDown, HelpCircle } from "lucide-react";
 
 const FAQS = [
   {
+    q: "What is a free second opinion?",
+    a: "You can share an existing quote or recommendation with SO HVAC. We will help explain the equipment, price, and available alternatives so you can make a more informed decision.",
+  },
+  {
+    q: "Do I need to replace my system?",
+    a: "Not necessarily. The purpose of the assessment is to understand the condition of the system and whether repair, replacement, or waiting is the most reasonable option.",
+  },
+  {
+    q: "Do you provide financing?",
+    a: "Available payment options should be confirmed directly with SO HVAC. Any financing terms must be provided in writing before the customer commits.",
+  },
+  {
+    q: "Which areas do you serve?",
+    a: "SO HVAC is focused on Mississauga and surrounding Greater Toronto Area communities. Availability should be confirmed when booking.",
+  },
+  {
     q: "How much does a new furnace cost in the GTA?",
-    a: "Most high-efficiency furnace installations in the GTA range from $4,500–$7,500 installed, depending on size, venting, and brand. We'll always show you the equipment cost and labour separately — and if another quote seems high, bring it to us for a free second opinion.",
-  },
-  {
-    q: "What is a free second opinion, and is there a catch?",
-    a: "No catch. We review your existing quote line by line and tell you if it's fair. If it is, we'll say so with complete mechanical engineering transparency.",
-  },
-  {
-    q: "Do you offer financing?",
-    a: "Yes — simple pre-authorized monthly payment plans arranged directly with us, with terms in writing before you commit and zero hidden dealer fees.",
-  },
-  {
-    q: "How fast can you install a new AC or furnace?",
-    a: "Most installations happen within the same week, and emergency no-heat or cryo-cooling failure situations are prioritized 24/7 across Greater Toronto.",
+    a: "Most high-efficiency furnace installations in the GTA range from $4,500–$7,500 installed, depending on size, venting, and brand. We’ll always show you the equipment cost and labour separately — and if another quote seems high, bring it to us for a free second opinion.",
   },
   {
     q: "Are your technicians licensed and insured?",
-    a: "Yes. All work is performed exclusively by TSSA-licensed, fully insured SO Certified™ mechanical engineers.",
-  },
-  {
-    q: "What rebates are available for heat pumps in Ontario?",
-    a: "Rebate programs change frequently — we track them directly for you and handle all necessary paperwork for any government energy program your new system qualifies for.",
+    a: "Yes. All work is performed by TSSA-licensed technicians according to applicable Ontario requirements.",
   },
 ];
 
@@ -55,10 +55,10 @@ export default function FaqSection() {
             style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
             className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0F0F0F]"
           >
-            Answers Before You Ask
+            Answers before the sales conversation.
           </h2>
           <p className="text-sm sm:text-base text-[#1A1A1A]/70 leading-relaxed font-light">
-            Marked up with FAQPage structural schema for rich engineering transparency.
+            Common questions about our process, pricing, and approach.
           </p>
         </div>
 

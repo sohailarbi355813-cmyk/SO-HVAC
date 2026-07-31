@@ -15,11 +15,11 @@ export default function FinalCtaSection() {
           style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
           className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white"
         >
-          Ready for an Honest HVAC Quote?
+          Before you sign an HVAC quote, understand what you are actually buying.
         </h2>
         
         <p className="text-lg sm:text-2xl text-white/95 max-w-2xl mx-auto font-normal leading-relaxed">
-          Free quotes. Free second opinions. Zero pressure. That&apos;s the SO HVAC standard.
+          Send us the quote, ask your questions, and get a clearer view of the options available for your home.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 max-w-md mx-auto">
@@ -27,7 +27,7 @@ export default function FinalCtaSection() {
             href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#DC2626] text-white font-extrabold text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:bg-[#B91C1C] hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
           >
-            <span>Get My Free Quote</span>
+            <span>Get a Free Second Opinion</span>
             <ArrowRight className="w-5 h-5 text-white" />
           </a>
 

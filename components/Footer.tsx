@@ -19,8 +19,8 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs sm:text-sm text-[#1A1A1A]/80 leading-relaxed mt-1 font-light">
-              <strong className="text-[#0F0F0F] font-bold">Second Opinion HVAC Services Inc.</strong><br />
-              Helping GTA homeowners make informed HVAC decisions since 2025. Transparent quotes, premium installs, honest advice.
+              <strong className="text-[#0F0F0F] font-bold">SO HVAC</strong> &mdash; <em>Second Opinion. First Choice.</em><br />
+              Helping GTA homeowners make informed heating and cooling decisions through clear recommendations, transparent pricing, and professional installation.
             </p>
 
             <div className="flex items-center gap-2 pt-2">
@@ -87,7 +87,7 @@ export default function Footer() {
         {/* Legal Bottom */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#1A1A1A]/60 font-medium gap-4">
           <span>
-            &copy; 2026 Second Opinion HVAC Services Inc. All rights reserved. &middot; <strong className="text-[#0F0F0F]">sohvac.ca</strong>
+            &copy; 2026 Second Opinion HVAC Services Inc. &middot; <strong className="text-[#0F0F0F]">sohvac.ca</strong>
           </span>
           <div className="flex gap-6">
             <a href="#" className="hover:text-[#0F0F0F] hover:underline transition-colors">Privacy Policy</a>

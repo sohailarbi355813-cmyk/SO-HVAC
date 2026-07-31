@@ -33,18 +33,18 @@ export default function SecondOpinionPromo() {
             {/* Content & Value Prop (7 Columns) */}
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="text-[#0033FF] font-mono text-xs sm:text-sm font-bold tracking-[0.2em] uppercase">
-                Free Second Opinion
+                THE SO HVAC DIFFERENCE
               </div>
 
               <h2 
                 style={{ fontFamily: "var(--font-space), system-ui, sans-serif" }}
                 className="text-3xl sm:text-5xl font-extrabold text-[#0F0F0F] tracking-tight leading-tight"
               >
-                Already Have a Quote? Don&apos;t Sign It Yet.
+                Built around better decisions—not bigger invoices.
               </h2>
 
               <p className="text-sm sm:text-lg text-[#0F0F0F]/80 leading-relaxed font-light">
-                The average GTA homeowner overpays by $2,000&ndash;$4,000 on HVAC replacements. Send us your quote and we&apos;ll review it free &mdash; the equipment, the sizing, and the price.
+                SO HVAC exists because homeowners are often asked to approve expensive replacements before anyone properly explains what is wrong, what is optional, and what is actually worth paying for.
               </p>
 
               <div className="space-y-3.5 pt-2">
@@ -52,19 +52,19 @@ export default function SecondOpinionPromo() {
                   <span className="w-5 h-5 rounded-full bg-[#1B8A5A] text-white flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(27,138,90,0.3)]">
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </span>
-                  <span>Line-by-line quote review in plain English</span>
+                  <span>Understand the issue first</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm sm:text-base text-[#0F0F0F] font-medium">
                   <span className="w-5 h-5 rounded-full bg-[#1B8A5A] text-white flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(27,138,90,0.3)]">
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </span>
-                  <span>We flag oversized equipment and inflated pricing</span>
+                  <span>Equipment options explained plainly</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm sm:text-base text-[#0F0F0F] font-medium">
                   <span className="w-5 h-5 rounded-full bg-[#1B8A5A] text-white flex items-center justify-center shrink-0 shadow-[0_0_10px_rgba(27,138,90,0.3)]">
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </span>
-                  <span>No pressure &mdash; even if you go with the other company</span>
+                  <span>Homeowner decides without pressure</span>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ export default function SecondOpinionPromo() {
                   href="https://wa.me/19055550142" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-[#DC2626] hover:bg-[#B91C1C] font-extrabold text-base text-white shadow-[0_10px_35px_rgba(220,38,38,0.4)] hover:scale-[1.02] transition-all"
                 >
-                  <span>Get My Free Quote Review</span>
+                  <span>Review My Quote</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </div>
