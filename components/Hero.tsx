@@ -32,18 +32,18 @@ export default function Hero() {
         className="relative z-10 flex flex-col md:flex-row items-end justify-between w-full max-w-[90vw] mx-auto mt-2 py-8 md:py-12"
       >
         <div className="max-w-3xl">
-          <p className="text-xs font-mono font-bold tracking-[0.25em] uppercase text-white/60 mb-4">GTA HVAC ADVICE BEFORE YOU COMMIT</p>
+          <p className="text-xs font-mono font-bold tracking-[0.25em] uppercase text-black/80 mb-4">GTA HVAC ADVICE BEFORE YOU COMMIT</p>
           <h2 className="text-5xl md:text-7xl lg:text-[5.5rem] font-sans font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
             Get clarity before you spend{" "}<span className="relative inline-block italic font-display text-[#DC2626]">thousands.</span>
           </h2>
-          <p className="text-base sm:text-xl text-white/80 max-w-2xl font-light leading-relaxed mb-6">
+          <p className="text-base sm:text-xl text-black/90 max-w-2xl font-medium leading-relaxed mb-6">
             SO HVAC helps homeowners understand their options before replacing a furnace, air conditioner, heat pump, or water heating system. Clear recommendations. Transparent pricing. No pressure.
           </p>
           <div className="flex flex-wrap gap-3">
-            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-white/30 text-white/80">TSSA Licensed</span>
-            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-white/30 text-white/80">Transparent Quotes</span>
-            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-white/30 text-white/80">GTA Service</span>
-            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-white/30 text-white/80">Same-Week Availability</span>
+            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-black/30 text-black/80">TSSA Licensed</span>
+            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-black/30 text-black/80">Transparent Quotes</span>
+            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-black/30 text-black/80">GTA Service</span>
+            <span className="text-xs font-bold px-3 py-1.5 rounded-full border border-black/30 text-black/80">Same-Week Availability</span>
           </div>
         </div>
 
